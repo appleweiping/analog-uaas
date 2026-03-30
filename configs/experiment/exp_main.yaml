@@ -1,0 +1,61 @@
+experiment_name: exp_main_opamp_reliable_optimization
+
+seed_list:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+
+circuit:
+  name: opamp
+  config_path: configs/circuit/opamp.yaml
+
+dataset:
+  version: v0_initial
+  initial_sampling:
+    method: lhs
+    size: 500
+  split:
+    train_ratio: 0.70
+    val_ratio: 0.15
+    test_ratio: 0.15
+  cache_enabled: true
+
+simulation:
+  simulator: spectre
+  max_parallel_jobs: 4
+  retry_on_failure: false
+  timeout_seconds: 600
+
+surrogate:
+  model_name: mlp_ensemble
+  config_path: configs/model/mlp_ensemble.yaml
+  retrain_frequency: 20
+  calibration_enabled: false
+
+optimization:
+  budget:
+    max_simulation_calls: 1000
+  candidate_pool_size: 200
+  batch_query_size: 10
+  objective_mode: constrained_optimization
+  use_boundary_risk: false
+  use_utility_score: false
+
+evaluation:
+  primary_metrics:
+    - simulation_calls_to_first_feasible
+    - success_rate
+    - final_objective_score
+    - instability_score
+  additional_metrics:
+    - false_feasible_rate
+    - boundary_region_error
+    - wall_clock_time
+
+logging:
+  save_logs: true
+  save_predictions: true
+  save_decisions: false
+  output_dir: results/logs/exp_main

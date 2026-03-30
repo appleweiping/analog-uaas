@@ -1,0 +1,77 @@
+circuit_name: two_stage_opamp
+topology: fixed
+process: fixed_pdk
+supply_voltage: 1.8
+
+design_variables:
+  W_in:
+    type: continuous
+    min: 1.0e-6
+    max: 50.0e-6
+    scale: log
+  L_in:
+    type: continuous
+    min: 0.18e-6
+    max: 1.0e-6
+    scale: linear
+  W_load:
+    type: continuous
+    min: 1.0e-6
+    max: 50.0e-6
+    scale: log
+  L_load:
+    type: continuous
+    min: 0.18e-6
+    max: 1.0e-6
+    scale: linear
+  W_stage2:
+    type: continuous
+    min: 1.0e-6
+    max: 100.0e-6
+    scale: log
+  L_stage2:
+    type: continuous
+    min: 0.18e-6
+    max: 1.0e-6
+    scale: linear
+  I_bias:
+    type: continuous
+    min: 1.0e-6
+    max: 100.0e-6
+    scale: log
+  Cc:
+    type: continuous
+    min: 0.1e-12
+    max: 10.0e-12
+    scale: log
+
+constraints:
+  gain_db:
+    type: lower_bound
+    value: 60.0
+  gbw_hz:
+    type: lower_bound
+    value: 1.0e6
+  phase_margin_deg:
+    type: lower_bound
+    value: 60.0
+  power_w:
+    type: upper_bound
+    value: 1.0e-3
+
+objective:
+  type: weighted_feasible_score
+  preference:
+    maximize:
+      - gain_db
+      - gbw_hz
+    minimize:
+      - power_w
+
+boundary_annotation:
+  margin_ratio: 0.05
+  near_boundary_threshold:
+    gain_db: 2.0
+    gbw_hz: 1.0e5
+    phase_margin_deg: 3.0
+    power_w: 1.0e-4
