@@ -1,0 +1,432 @@
+[
+  {
+    "sample_id": "1815704e-887b-465e-a1ae-1f98685b7bb5",
+    "x_raw": {
+      "W_in": 5e-06,
+      "L_in": 1.8e-07,
+      "W_load": 8e-06,
+      "L_load": 1.8e-07,
+      "W_stage2": 2e-05,
+      "L_stage2": 1.8e-07,
+      "I_bias": 1e-05,
+      "Cc": 1e-12
+    },
+    "x_norm": null,
+    "y": {
+      "gain_db": 52.5,
+      "gbw_hz": 1000000.0000000001,
+      "phase_margin_deg": 58.0,
+      "power_w": 1.8e-05
+    },
+    "is_feasible": false,
+    "constraint_satisfaction": {
+      "gain_db": false,
+      "gbw_hz": true,
+      "phase_margin_deg": false,
+      "power_w": true
+    },
+    "constraint_violation": {
+      "gain_db": 7.5,
+      "gbw_hz": 0.0,
+      "phase_margin_deg": 2.0,
+      "power_w": 0.0
+    },
+    "boundary_distance": null,
+    "boundary_label": "unknown",
+    "simulation_success": true,
+    "failure_type": null,
+    "simulation_time_sec": null,
+    "source_stage": "initial",
+    "seed": null,
+    "dataset_version": "v0_initial",
+    "config_name": "exp_main",
+    "created_at": "2026-03-30T15:15:52.514534"
+  },
+  {
+    "sample_id": "05d6adc5-9f1c-4b72-a83b-17225b3bbc30",
+    "x_raw": {
+      "W_in": 5e-06,
+      "L_in": 1.8e-07,
+      "W_load": 8e-06,
+      "L_load": 1.8e-07,
+      "W_stage2": 2e-05,
+      "L_stage2": 1.8e-07,
+      "I_bias": 1e-05,
+      "Cc": 1e-12
+    },
+    "x_norm": null,
+    "y": {
+      "gain_db": 52.5,
+      "gbw_hz": 1000000.0000000001,
+      "phase_margin_deg": 58.0,
+      "power_w": 1.8e-05
+    },
+    "is_feasible": false,
+    "constraint_satisfaction": {
+      "gain_db": false,
+      "gbw_hz": true,
+      "phase_margin_deg": false,
+      "power_w": true
+    },
+    "constraint_violation": {
+      "gain_db": 7.5,
+      "gbw_hz": 0.0,
+      "phase_margin_deg": 2.0,
+      "power_w": 0.0
+    },
+    "boundary_distance": null,
+    "boundary_label": "unknown",
+    "simulation_success": true,
+    "failure_type": null,
+    "simulation_time_sec": null,
+    "source_stage": "initial",
+    "seed": null,
+    "dataset_version": "v0_initial",
+    "config_name": "exp_main",
+    "created_at": "2026-03-30T15:15:52.514534"
+  },
+  {
+    "sample_id": "b629fdb9-3de7-483b-9aff-c997a9c9f503",
+    "x_raw": {
+      "W_in": 5e-06,
+      "L_in": 1.8e-07,
+      "W_load": 8e-06,
+      "L_load": 1.8e-07,
+      "W_stage2": 2e-05,
+      "L_stage2": 1.8e-07,
+      "I_bias": 1e-05,
+      "Cc": 1e-12
+    },
+    "x_norm": null,
+    "y": {
+      "gain_db": 52.5,
+      "gbw_hz": 1000000.0000000001,
+      "phase_margin_deg": 58.0,
+      "power_w": 1.8e-05
+    },
+    "is_feasible": false,
+    "constraint_satisfaction": {
+      "gain_db": false,
+      "gbw_hz": true,
+      "phase_margin_deg": false,
+      "power_w": true
+    },
+    "constraint_violation": {
+      "gain_db": 7.5,
+      "gbw_hz": 0.0,
+      "phase_margin_deg": 2.0,
+      "power_w": 0.0
+    },
+    "boundary_distance": null,
+    "boundary_label": "unknown",
+    "simulation_success": true,
+    "failure_type": null,
+    "simulation_time_sec": null,
+    "source_stage": "initial",
+    "seed": null,
+    "dataset_version": "v0_initial",
+    "config_name": "exp_main",
+    "created_at": "2026-03-30T15:15:52.514534"
+  },
+  {
+    "sample_id": "15aef915-94bd-425b-978e-1bd64fed98db",
+    "x_raw": {
+      "W_in": 5e-06,
+      "L_in": 1.8e-07,
+      "W_load": 8e-06,
+      "L_load": 1.8e-07,
+      "W_stage2": 2e-05,
+      "L_stage2": 1.8e-07,
+      "I_bias": 1e-05,
+      "Cc": 1e-12
+    },
+    "x_norm": null,
+    "y": {
+      "gain_db": 52.5,
+      "gbw_hz": 1000000.0000000001,
+      "phase_margin_deg": 58.0,
+      "power_w": 1.8e-05
+    },
+    "is_feasible": false,
+    "constraint_satisfaction": {
+      "gain_db": false,
+      "gbw_hz": true,
+      "phase_margin_deg": false,
+      "power_w": true
+    },
+    "constraint_violation": {
+      "gain_db": 7.5,
+      "gbw_hz": 0.0,
+      "phase_margin_deg": 2.0,
+      "power_w": 0.0
+    },
+    "boundary_distance": null,
+    "boundary_label": "unknown",
+    "simulation_success": true,
+    "failure_type": null,
+    "simulation_time_sec": null,
+    "source_stage": "initial",
+    "seed": null,
+    "dataset_version": "v0_initial",
+    "config_name": "exp_main",
+    "created_at": "2026-03-30T15:15:52.514534"
+  },
+  {
+    "sample_id": "a159e8d6-aceb-488c-bf2b-5649c5b6b364",
+    "x_raw": {
+      "W_in": 5e-06,
+      "L_in": 1.8e-07,
+      "W_load": 8e-06,
+      "L_load": 1.8e-07,
+      "W_stage2": 2e-05,
+      "L_stage2": 1.8e-07,
+      "I_bias": 1e-05,
+      "Cc": 1e-12
+    },
+    "x_norm": null,
+    "y": {
+      "gain_db": 52.5,
+      "gbw_hz": 1000000.0000000001,
+      "phase_margin_deg": 58.0,
+      "power_w": 1.8e-05
+    },
+    "is_feasible": false,
+    "constraint_satisfaction": {
+      "gain_db": false,
+      "gbw_hz": true,
+      "phase_margin_deg": false,
+      "power_w": true
+    },
+    "constraint_violation": {
+      "gain_db": 7.5,
+      "gbw_hz": 0.0,
+      "phase_margin_deg": 2.0,
+      "power_w": 0.0
+    },
+    "boundary_distance": null,
+    "boundary_label": "unknown",
+    "simulation_success": true,
+    "failure_type": null,
+    "simulation_time_sec": null,
+    "source_stage": "initial",
+    "seed": null,
+    "dataset_version": "v0_initial",
+    "config_name": "exp_main",
+    "created_at": "2026-03-30T15:15:52.514534"
+  },
+  {
+    "sample_id": "6d85ee05-39af-43fa-a08f-375fb47250f7",
+    "x_raw": {
+      "W_in": 5e-06,
+      "L_in": 1.8e-07,
+      "W_load": 8e-06,
+      "L_load": 1.8e-07,
+      "W_stage2": 2e-05,
+      "L_stage2": 1.8e-07,
+      "I_bias": 1e-05,
+      "Cc": 1e-12
+    },
+    "x_norm": null,
+    "y": {
+      "gain_db": 52.5,
+      "gbw_hz": 1000000.0000000001,
+      "phase_margin_deg": 58.0,
+      "power_w": 1.8e-05
+    },
+    "is_feasible": false,
+    "constraint_satisfaction": {
+      "gain_db": false,
+      "gbw_hz": true,
+      "phase_margin_deg": false,
+      "power_w": true
+    },
+    "constraint_violation": {
+      "gain_db": 7.5,
+      "gbw_hz": 0.0,
+      "phase_margin_deg": 2.0,
+      "power_w": 0.0
+    },
+    "boundary_distance": null,
+    "boundary_label": "unknown",
+    "simulation_success": true,
+    "failure_type": null,
+    "simulation_time_sec": null,
+    "source_stage": "initial",
+    "seed": null,
+    "dataset_version": "v0_initial",
+    "config_name": "exp_main",
+    "created_at": "2026-03-30T15:15:52.514534"
+  },
+  {
+    "sample_id": "97e86372-320a-4d80-845f-2470bcb54825",
+    "x_raw": {
+      "W_in": 5e-06,
+      "L_in": 1.8e-07,
+      "W_load": 8e-06,
+      "L_load": 1.8e-07,
+      "W_stage2": 2e-05,
+      "L_stage2": 1.8e-07,
+      "I_bias": 1e-05,
+      "Cc": 1e-12
+    },
+    "x_norm": null,
+    "y": {
+      "gain_db": 52.5,
+      "gbw_hz": 1000000.0000000001,
+      "phase_margin_deg": 58.0,
+      "power_w": 1.8e-05
+    },
+    "is_feasible": false,
+    "constraint_satisfaction": {
+      "gain_db": false,
+      "gbw_hz": true,
+      "phase_margin_deg": false,
+      "power_w": true
+    },
+    "constraint_violation": {
+      "gain_db": 7.5,
+      "gbw_hz": 0.0,
+      "phase_margin_deg": 2.0,
+      "power_w": 0.0
+    },
+    "boundary_distance": null,
+    "boundary_label": "unknown",
+    "simulation_success": true,
+    "failure_type": null,
+    "simulation_time_sec": null,
+    "source_stage": "initial",
+    "seed": null,
+    "dataset_version": "v0_initial",
+    "config_name": "exp_main",
+    "created_at": "2026-03-30T15:15:52.514534"
+  },
+  {
+    "sample_id": "7a6d5cc6-f208-4580-85bb-5839486698c7",
+    "x_raw": {
+      "W_in": 5e-06,
+      "L_in": 1.8e-07,
+      "W_load": 8e-06,
+      "L_load": 1.8e-07,
+      "W_stage2": 2e-05,
+      "L_stage2": 1.8e-07,
+      "I_bias": 1e-05,
+      "Cc": 1e-12
+    },
+    "x_norm": null,
+    "y": {
+      "gain_db": 52.5,
+      "gbw_hz": 1000000.0000000001,
+      "phase_margin_deg": 58.0,
+      "power_w": 1.8e-05
+    },
+    "is_feasible": false,
+    "constraint_satisfaction": {
+      "gain_db": false,
+      "gbw_hz": true,
+      "phase_margin_deg": false,
+      "power_w": true
+    },
+    "constraint_violation": {
+      "gain_db": 7.5,
+      "gbw_hz": 0.0,
+      "phase_margin_deg": 2.0,
+      "power_w": 0.0
+    },
+    "boundary_distance": null,
+    "boundary_label": "unknown",
+    "simulation_success": true,
+    "failure_type": null,
+    "simulation_time_sec": null,
+    "source_stage": "initial",
+    "seed": null,
+    "dataset_version": "v0_initial",
+    "config_name": "exp_main",
+    "created_at": "2026-03-30T15:15:52.514534"
+  },
+  {
+    "sample_id": "35332627-83b4-4a41-babe-03c216a2c14d",
+    "x_raw": {
+      "W_in": 5e-06,
+      "L_in": 1.8e-07,
+      "W_load": 8e-06,
+      "L_load": 1.8e-07,
+      "W_stage2": 2e-05,
+      "L_stage2": 1.8e-07,
+      "I_bias": 1e-05,
+      "Cc": 1e-12
+    },
+    "x_norm": null,
+    "y": {
+      "gain_db": 52.5,
+      "gbw_hz": 1000000.0000000001,
+      "phase_margin_deg": 58.0,
+      "power_w": 1.8e-05
+    },
+    "is_feasible": false,
+    "constraint_satisfaction": {
+      "gain_db": false,
+      "gbw_hz": true,
+      "phase_margin_deg": false,
+      "power_w": true
+    },
+    "constraint_violation": {
+      "gain_db": 7.5,
+      "gbw_hz": 0.0,
+      "phase_margin_deg": 2.0,
+      "power_w": 0.0
+    },
+    "boundary_distance": null,
+    "boundary_label": "unknown",
+    "simulation_success": true,
+    "failure_type": null,
+    "simulation_time_sec": null,
+    "source_stage": "initial",
+    "seed": null,
+    "dataset_version": "v0_initial",
+    "config_name": "exp_main",
+    "created_at": "2026-03-30T15:15:52.514534"
+  },
+  {
+    "sample_id": "b24d3392-dcf2-4e85-ab9f-16a880ac1aa3",
+    "x_raw": {
+      "W_in": 5e-06,
+      "L_in": 1.8e-07,
+      "W_load": 8e-06,
+      "L_load": 1.8e-07,
+      "W_stage2": 2e-05,
+      "L_stage2": 1.8e-07,
+      "I_bias": 1e-05,
+      "Cc": 1e-12
+    },
+    "x_norm": null,
+    "y": {
+      "gain_db": 52.5,
+      "gbw_hz": 1000000.0000000001,
+      "phase_margin_deg": 58.0,
+      "power_w": 1.8e-05
+    },
+    "is_feasible": false,
+    "constraint_satisfaction": {
+      "gain_db": false,
+      "gbw_hz": true,
+      "phase_margin_deg": false,
+      "power_w": true
+    },
+    "constraint_violation": {
+      "gain_db": 7.5,
+      "gbw_hz": 0.0,
+      "phase_margin_deg": 2.0,
+      "power_w": 0.0
+    },
+    "boundary_distance": null,
+    "boundary_label": "unknown",
+    "simulation_success": true,
+    "failure_type": null,
+    "simulation_time_sec": null,
+    "source_stage": "initial",
+    "seed": null,
+    "dataset_version": "v0_initial",
+    "config_name": "exp_main",
+    "created_at": "2026-03-30T15:15:52.514534"
+  }
+]
