@@ -266,3 +266,7 @@ MIT License. See [LICENSE](LICENSE) for details.
 ---
 
 <p align="center"><i>Reliability is not a property of the surrogate. It is a property of the system.</i></p>
+=======
+# AnalogGNN
+Topology-aware graph neural network surrogate for analog circuit optimization under PVT variations.
+>>>>>>> f6b8cf322a292ec8a129fa54deda16414f5ca51e
