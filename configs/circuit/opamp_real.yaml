@@ -1,0 +1,55 @@
+name: two_stage_opamp_real
+
+paths:
+  template_netlist: netlists/templates/opamp_template_real.scs
+  generated_netlists_dir: netlists/generated/opamp_real
+  raw_results_dir: data/raw/opamp_real
+  processed_results_dir: data/processed/opamp_real
+
+simulation:
+  simulator: spectre
+  spectre_binary: spectre
+  use_mock: false
+  timeout_sec: 300
+  max_workers: 2
+  log_filename: spectre.out
+  metrics_filename: metrics.txt
+  stderr_filename: spectre.err
+
+  # 真实模式下，建议通过 OCEAN / SKILL / shell 脚本将结果导出成 metrics.txt
+  # 支持 {run_dir} 和 {netlist_path}
+  extract_metrics_cmd: "ocean -nograph -restore scripts/extract_metrics.ocn -log {run_dir}/ocean.log"
+
+environment:
+  vdd: 1.8
+  cload: 1.0e-12
+  temp: 27.0
+
+design_space:
+  parameters:
+    w_in: { low: 1.0e-6, high: 50.0e-6, scale: log }
+    l_in: { low: 0.18e-6, high: 2.0e-6, scale: log }
+    w_load: { low: 1.0e-6, high: 60.0e-6, scale: log }
+    l_load: { low: 0.18e-6, high: 2.0e-6, scale: log }
+    w_tail: { low: 1.0e-6, high: 40.0e-6, scale: log }
+    l_tail: { low: 0.18e-6, high: 2.0e-6, scale: log }
+    i_bias: { low: 5.0e-6, high: 200.0e-6, scale: log }
+    c_comp: { low: 0.1e-12, high: 10.0e-12, scale: log }
+    w_stage2: { low: 1.0e-6, high: 100.0e-6, scale: log }
+    l_stage2: { low: 0.18e-6, high: 2.0e-6, scale: log }
+
+  coupling_constraints:
+    - { type: ratio_min, numerator: w_stage2, denominator: w_in, value: 0.5 }
+    - { type: ratio_max, numerator: w_stage2, denominator: w_in, value: 10.0 }
+    - { type: ratio_min, numerator: w_load, denominator: w_in, value: 0.2 }
+    - { type: ratio_max, numerator: w_load, denominator: w_in, value: 4.0 }
+
+constraints:
+  gain_db_min: 60.0
+  gbw_hz_min: 1.0e7
+  pm_deg_min: 60.0
+  power_w_max: 1.5e-3
+
+sampling:
+  seed: 42
+  n_initial: 8
