@@ -1,46 +1,189 @@
-# Simulation Pipeline
+# Simulation Pipeline & Experiment Protocol
 
-## Purpose
+---
 
-本项目的仿真流水线承担两个作用。第一，它是代理模型训练所依赖的数据生成引擎，负责把设计参数映射为高保真性能指标。第二，它是闭环优化系统中的判定基准，在模型不可信或高风险时提供真实反馈。正因为仿真流水线同时支撑数据集构建与在线优化，所以其设计必须优先于模型本身，并满足可重复、可追踪、可批量运行的要求。
+## Part 1: Simulation Pipeline
 
-## Circuit and Design Space
+> 文件路径：`docs/simulation_pipeline.md`
 
-第一篇工作固定研究对象为两级运放，在固定工艺和仿真环境下展开。设计空间由一组连续参数组成，包括输入差分对尺寸、镜像负载尺寸、尾电流、第二级晶体管参数、补偿电容等。每个参数都需要明确其物理范围、取样方式以及是否使用对数尺度。对于具有耦合关系的参数，还需要在设计空间层面显式处理约束，以避免生成明显非法或无意义的网表。
+This document defines the full simulation pipeline in Stage-2.
 
-## Netlist Template
+### Overview
 
-所有仿真均由参数化网表模板驱动。模板文件位于 `netlists/templates/` 目录，包含电路拓扑、模型卡引用、分析设置和输出测量语句。系统通过 `netlist_writer.py` 将采样到的设计参数填充到模板中，生成可执行的具体网表。模板必须保持结构稳定，并在参数占位符、仿真选项和测量脚本上统一规范，这样后续所有实验才能共享同一仿真定义。
+The pipeline transforms circuit design parameters into structured simulation records:
 
-## Simulation Invocation
+```
+design → netlist → simulation → metrics → record → dataset
+```
 
-仿真执行由统一接口负责调度。系统会将生成的网表提交给指定仿真器，例如 Spectre，并在独立的工作目录中保存日志、原始结果文件和状态信息。为支持批量运行，仿真器调用必须与上层优化逻辑解耦，由 `job_manager.py` 统一管理任务队列、并发数、失败重试和缓存查找。对于相同参数组合，应优先命中缓存而非重复提交仿真，从而减少不必要的计算开销。
+Each stage is explicitly modularized to ensure reproducibility and extensibility.
 
-## Result Parsing
+---
 
-仿真完成后，`result_parser.py` 负责从输出文件中提取核心指标，包括增益、单位增益带宽、相位裕度、功耗等。解析结果必须统一写入结构化格式，例如 JSON 或 CSV，并附带仿真元信息，包括网表路径、运行时间、状态码和时间戳。所有指标命名必须统一，以保证后续数据构建、训练脚本和评测代码能够直接消费。
+### Pipeline Steps
 
-## Failure Handling
+#### 1. Design Sampling
 
-仿真失败与性能不达标是两种不同的事件，必须严格区分。仿真失败指的是仿真器未能正常完成求解，例如收敛问题、文件损坏、结果缺失等；性能不达标则表示仿真正常完成，但设计不满足性能约束。`failure_checker.py` 的职责是识别仿真失败，并将其单独标记；约束检查则在上层数据处理阶段完成。这样做的原因在于，这两类样本在方法层的意义不同：前者属于求解异常，后者则是合法但不可行的设计点。
+- **Input:** design space (`configs/circuit/opamp.yaml`)
+- **Output:** parameter vectors
 
-## Batch Simulation Workflow
+```bash
+py -3.12 -m scripts.generate_initial_designs
+```
 
-批量仿真流程如下。首先，由设计空间模块产生一批候选参数；随后，网表生成模块将其转换为具体网表文件；然后，任务调度器将这些网表分配给仿真器执行；仿真完成后，解析器提取性能指标并写入原始结果目录；最后，原始结果经过清洗和合并，进入结构化数据集构建阶段。整个过程中，每一个样本都应有唯一标识，用于关联参数、网表、日志和结果。
+#### 2. Netlist Generation
 
-## Output Contract
+- Convert parameters into Spectre/SPICE netlist
+- Ensures deterministic mapping
 
-仿真流水线向上层数据系统提供统一输出接口。每次成功执行后，应至少返回以下内容：原始设计参数、仿真性能指标、仿真状态、仿真耗时、环境信息和样本标识。如果仿真失败，也必须返回失败原因与状态码，而不是简单丢弃样本。因为对于后期 failure analysis 和鲁棒性讨论，失败样本本身也可能包含有价值的信息。
+**Module:** `src/circuits/netlist_writer.py`
 
-## Engineering Principle
+#### 3. Simulation Execution
 
-本项目的仿真流水线并不是简单的“跑电路脚本”，而是整个研究系统的地基。只有当网表参数化、任务调度、结果解析和失败检测全部标准化之后，后续的代理模型、风险建模和优化闭环才具备可信基础。因此，本项目明确将“仿真基础设施先于模型实验”作为方法实施的第一原则。
+Two modes:
 
-## Mock vs Real Simulation Modes
+| Mode | Description |
+|------|-------------|
+| **Mock Mode** | Fast synthetic simulation — used for pipeline validation |
+| **Real Mode** | Calls Spectre — requires template + extraction script |
 
-本项目第二阶段同时维护两种执行模式：mock mode 与 real mode。  
-mock mode 的目标是快速验证参数采样、网表写入、批量任务调度、结果解析和失败判定等系统级接口是否正确连通，不依赖真实仿真环境，适用于早期工程调试与结构验证。  
-real mode 的目标是调用真实 Spectre 环境，基于真实网表模板与真实后处理脚本导出 gain、GBW、PM、power 等指标，适用于后续研究数据构建与论文实验。
+Switch via config:
 
-两种模式共享相同的数据契约、目录组织、record 结构与结果解析接口，因此 mock mode 生成的数据可用于前期流程验证，而 real mode 则可无缝接入后续 surrogate 建模与 failure mode 分析。  
-项目当前默认使用 mock mode 完成系统主链路调通，但要求在第二阶段收尾前至少完成一到两个样本的 real mode 链路验证，以确保后续第三阶段不会将数据问题、仿真问题和模型问题混淆。
+```yaml
+simulation:
+  use_mock: true   # or false for real mode
+```
+
+#### 4. Metrics Extraction
+
+- Extract: `gain`, `GBW`, `PM`, `power`
+- Prefer text-based metrics output (`metrics.txt`)
+
+#### 5. Failure Detection
+
+Failure types:
+
+- `simulation_error`
+- `metrics_missing`
+- `simulation_flagged_failure`
+
+**Module:** `src/simulation/failure_checker.py`
+
+#### 6. Record Construction
+
+Each run produces a structured record:
+
+```json
+{
+  "design": { "...": "..." },
+  "metrics": { "...": "..." },
+  "simulation_failed": false,
+  "failure_reasons": [],
+  "is_feasible": true,
+  "violations": { "...": "..." },
+  "margins": { "...": "..." }
+}
+```
+
+#### 7. Dataset Export
+
+```bash
+py -3.12 -m scripts.parse_raw_results
+```
+
+Outputs:
+
+- **CSV** — flat format
+- **JSON** — structured format
+
+---
+
+### Key Design Principles
+
+| Principle | Description |
+|-----------|-------------|
+| Deterministic pipeline | Same inputs always produce same outputs |
+| Structured failure semantics | All failures are typed and traceable |
+| Config-driven execution | Behavior controlled via YAML configs |
+| Mock/Real unified interface | Same code path for both modes |
+
+### Stage-2 Objective
+
+> Transform circuit optimization into a **programmable data generation system**.
+> NOT to optimize performance yet.
+
+---
+
+## Part 2: Experiment Protocol
+
+> 文件路径：`docs/experiment_protocol.md`
+
+---
+
+### Execution Rules
+
+All scripts **MUST** be executed using:
+
+```bash
+py -3.12 -m scripts.<script_name>
+```
+
+---
+
+### Standard Workflow
+
+#### Step 1: Generate Designs
+
+```bash
+py -3.12 -m scripts.generate_initial_designs
+```
+
+#### Step 2: Run Simulations
+
+```bash
+py -3.12 -m scripts.run_batch_simulations
+```
+
+#### Step 3: Parse Results
+
+```bash
+py -3.12 -m scripts.parse_raw_results
+```
+
+#### Step 4: Analyze Results
+
+```bash
+py -3.12 -m scripts.analyze_results
+```
+
+---
+
+### Data Requirements
+
+Each dataset **MUST** contain:
+
+- Design parameters
+- Performance metrics
+- Constraint margins
+- Simulation status
+- Failure reasons
+
+---
+
+### Stage-2 Exit Criteria
+
+Stage-2 is considered **complete** if all of the following are met:
+
+1. Pipeline runs end-to-end without manual intervention
+2. Mock mode produces a stable dataset
+3. Real mode validated on at least 1–2 samples
+4. Failure categories are explicitly defined
+5. Data integrity checks pass
+6. Summary statistics can be generated
+
+---
+
+### Notes
+
+- Stage-2 focuses on **system reliability**, not optimization performance
+- All future stages depend on this pipeline being stable and reproducible
