@@ -1,0 +1,2901 @@
+[
+  {
+    "run_id": "run_000000",
+    "design": {
+      "w_in": 1.220020000984612e-05,
+      "l_in": 1.911734993141446e-07,
+      "w_load": 3.08349839246963e-06,
+      "l_load": 3.0810362389874677e-07,
+      "w_tail": 1.5131119701913381e-05,
+      "l_tail": 9.18197409019606e-07,
+      "i_bias": 0.00013436779638143653,
+      "c_comp": 1.492373969285864e-13,
+      "w_stage2": 6.979810621615145e-06,
+      "l_stage2": 1.933896246713615e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000000.scs",
+    "run_dir": "data\\raw\\opamp\\run_000000",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.006000995635986328,
+      "run_dir": "data\\raw\\opamp\\run_000000",
+      "log_path": "data\\raw\\opamp\\run_000000\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000000\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000000\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 63.792828,
+      "gbw_hz": 1779340877.942804,
+      "pm_deg": 74.330488,
+      "power_w": 0.000284176
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": true,
+    "violations": {},
+    "margins": {
+      "gain_db": 3.792828,
+      "gbw_hz": 1769340877.942804,
+      "pm_deg": 14.330488000000003,
+      "power_w": 0.001215824
+    }
+  },
+  {
+    "run_id": "run_000001",
+    "design": {
+      "w_in": 2.3511845862046403e-05,
+      "l_in": 1.0432658394528353e-06,
+      "w_load": 8.98451527342864e-06,
+      "l_load": 1.8746301797317612e-06,
+      "w_tail": 4.040496929497316e-06,
+      "l_tail": 6.801005567167524e-07,
+      "i_bias": 0.00010659234914607571,
+      "c_comp": 1.7259948865207625e-12,
+      "w_stage2": 5.289490002498291e-05,
+      "l_stage2": 7.228410959542176e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000001.scs",
+    "run_dir": "data\\raw\\opamp\\run_000001",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0038843154907226562,
+      "run_dir": "data\\raw\\opamp\\run_000001",
+      "log_path": "data\\raw\\opamp\\run_000001\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000001\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000001\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 60.872059,
+      "gbw_hz": 374193769.068171,
+      "pm_deg": 78.873428,
+      "power_w": 0.000292408
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": true,
+    "violations": {},
+    "margins": {
+      "gain_db": 0.8720590000000001,
+      "gbw_hz": 364193769.068171,
+      "pm_deg": 18.873428000000004,
+      "power_w": 0.001207592
+    }
+  },
+  {
+    "run_id": "run_000002",
+    "design": {
+      "w_in": 3.076435923137411e-05,
+      "l_in": 3.3940135971146997e-07,
+      "w_load": 7.764577388103362e-06,
+      "l_load": 2.76757275991905e-07,
+      "w_tail": 2.8979076970371457e-05,
+      "l_tail": 1.4642789534998999e-06,
+      "i_bias": 1.5034758770709504e-05,
+      "c_comp": 1.8962648276605006e-12,
+      "w_stage2": 1.6517351953452606e-05,
+      "l_stage2": 2.6007901701082875e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000002.scs",
+    "run_dir": "data\\raw\\opamp\\run_000002",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.006000995635986328,
+      "run_dir": "data\\raw\\opamp\\run_000002",
+      "log_path": "data\\raw\\opamp\\run_000002\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000002\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000002\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 67.508971,
+      "gbw_hz": 13373766.78267,
+      "pm_deg": 90.847859,
+      "power_w": 6.0536e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": true,
+    "violations": {},
+    "margins": {
+      "gain_db": 7.5089710000000025,
+      "gbw_hz": 3373766.7826700006,
+      "pm_deg": 30.847859,
+      "power_w": 0.001439464
+    }
+  },
+  {
+    "run_id": "run_000003",
+    "design": {
+      "w_in": 1.9746174804058473e-05,
+      "l_in": 6.596782511293403e-07,
+      "w_load": 2.4239052903091802e-05,
+      "l_load": 6.454964088341827e-07,
+      "w_tail": 1.0021118827659325e-06,
+      "l_tail": 3.9288109344216576e-07,
+      "i_bias": 5.372456578124765e-06,
+      "c_comp": 7.214350406840079e-12,
+      "w_stage2": 5.7206286347481074e-05,
+      "l_stage2": 1.3334998220584775e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000003.scs",
+    "run_dir": "data\\raw\\opamp\\run_000003",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.002116680145263672,
+      "run_dir": "data\\raw\\opamp\\run_000003",
+      "log_path": "data\\raw\\opamp\\run_000003\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000003\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000003\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "simulation_failed": 1.0
+    },
+    "simulation_failed": true,
+    "failure_reasons": [
+      "simulation_failed flag found in metrics",
+      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+    ],
+    "metrics_complete": false,
+    "is_feasible": false,
+    "violations": {},
+    "margins": {}
+  },
+  {
+    "run_id": "run_000004",
+    "design": {
+      "w_in": 1.320125206743701e-06,
+      "l_in": 8.227220743910785e-07,
+      "w_load": 2.5532486981914966e-06,
+      "l_load": 1.5926570405805058e-06,
+      "w_tail": 2.383348121946352e-05,
+      "l_tail": 2.134873318679842e-07,
+      "i_bias": 1.2030057601644937e-05,
+      "c_comp": 2.177486928419668e-12,
+      "w_stage2": 2.682091654045888e-06,
+      "l_stage2": 2.475361386260239e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000004.scs",
+    "run_dir": "data\\raw\\opamp\\run_000004",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000004",
+      "log_path": "data\\raw\\opamp\\run_000004\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000004\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000004\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 46.210055,
+      "gbw_hz": 37907799.061591,
+      "pm_deg": 74.791039,
+      "power_w": 4.2748e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 13.789945000000003
+    },
+    "margins": {
+      "gain_db": -13.789945000000003,
+      "gbw_hz": 27907799.061591,
+      "pm_deg": 14.791038999999998,
+      "power_w": 0.001457252
+    }
+  },
+  {
+    "run_id": "run_000005",
+    "design": {
+      "w_in": 2.8220976746342408e-06,
+      "l_in": 1.1891050135912161e-06,
+      "w_load": 6.442785866742737e-06,
+      "l_load": 4.984662426259328e-07,
+      "w_tail": 3.4172778485939026e-05,
+      "l_tail": 1.9780772080370167e-06,
+      "i_bias": 3.884581161609973e-05,
+      "c_comp": 2.7341135712587687e-12,
+      "w_stage2": 2.039828477445657e-06,
+      "l_stage2": 3.677536028132612e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000005.scs",
+    "run_dir": "data\\raw\\opamp\\run_000005",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000005",
+      "log_path": "data\\raw\\opamp\\run_000005\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000005\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000005\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 51.792235,
+      "gbw_hz": 30572675.646685,
+      "pm_deg": 85.712938,
+      "power_w": 8.1742e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 8.207765000000002
+    },
+    "margins": {
+      "gain_db": -8.207765000000002,
+      "gbw_hz": 20572675.646685,
+      "pm_deg": 25.712937999999994,
+      "power_w": 0.001418258
+    }
+  },
+  {
+    "run_id": "run_000006",
+    "design": {
+      "w_in": 5.155259796759584e-06,
+      "l_in": 7.339258317015378e-07,
+      "w_load": 8.503285077702987e-06,
+      "l_load": 1.7090256291602129e-06,
+      "w_tail": 2.1243960794258346e-06,
+      "l_tail": 1.0098001839136216e-06,
+      "i_bias": 1.2060330782903015e-05,
+      "c_comp": 6.188304760120427e-13,
+      "w_stage2": 2.2048570921913152e-05,
+      "l_stage2": 3.706779038407499e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000006.scs",
+    "run_dir": "data\\raw\\opamp\\run_000006",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000006",
+      "log_path": "data\\raw\\opamp\\run_000006\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000006\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000006\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 58.252647,
+      "gbw_hz": 274002749.488258,
+      "pm_deg": 65.616725,
+      "power_w": 5.0395e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 1.7473529999999968
+    },
+    "margins": {
+      "gain_db": -1.7473529999999968,
+      "gbw_hz": 264002749.488258,
+      "pm_deg": 5.616725000000002,
+      "power_w": 0.001449605
+    }
+  },
+  {
+    "run_id": "run_000007",
+    "design": {
+      "w_in": 3.444891694835463e-06,
+      "l_in": 1.1003742780658428e-06,
+      "w_load": 1.3458375141321137e-06,
+      "l_load": 5.426602657850207e-07,
+      "w_tail": 3.97725936261467e-05,
+      "l_tail": 1.981288992713163e-06,
+      "i_bias": 6.551459709903139e-06,
+      "c_comp": 2.6687544991751566e-13,
+      "w_stage2": 3.3915703469384507e-06,
+      "l_stage2": 1.7030817309758794e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000007.scs",
+    "run_dir": "data\\raw\\opamp\\run_000007",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000007",
+      "log_path": "data\\raw\\opamp\\run_000007\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000007\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000007\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 50.369918,
+      "gbw_hz": 80564862.471183,
+      "pm_deg": 73.804199,
+      "power_w": 3.8854e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 9.630082000000002
+    },
+    "margins": {
+      "gain_db": -9.630082000000002,
+      "gbw_hz": 70564862.471183,
+      "pm_deg": 13.804198999999997,
+      "power_w": 0.001461146
+    }
+  },
+  {
+    "run_id": "run_000008",
+    "design": {
+      "w_in": 3.433582834644946e-05,
+      "l_in": 6.696187977641856e-07,
+      "w_load": 3.0481488999898853e-05,
+      "l_load": 7.318738796210169e-07,
+      "w_tail": 1.726852043363518e-06,
+      "l_tail": 2.4465247382837994e-07,
+      "i_bias": 1.5589004189074935e-05,
+      "c_comp": 6.2800482069622365e-12,
+      "w_stage2": 3.9106109300110705e-05,
+      "l_stage2": 1.4300745483016389e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000008.scs",
+    "run_dir": "data\\raw\\opamp\\run_000008",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000008",
+      "log_path": "data\\raw\\opamp\\run_000008\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000008\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000008\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 65.070671,
+      "gbw_hz": 8812063.548808,
+      "pm_deg": 82.594036,
+      "power_w": 5.6656e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gbw_hz": 1187936.4511920009
+    },
+    "margins": {
+      "gain_db": 5.070671000000004,
+      "gbw_hz": -1187936.4511920009,
+      "pm_deg": 22.594036000000003,
+      "power_w": 0.001443344
+    }
+  },
+  {
+    "run_id": "run_000009",
+    "design": {
+      "w_in": 2.9440090686410403e-05,
+      "l_in": 1.888631706454659e-06,
+      "w_load": 2.7648701994943478e-05,
+      "l_load": 1.5032115479343207e-06,
+      "w_tail": 1.0957443468558962e-06,
+      "l_tail": 1.060572394467278e-06,
+      "i_bias": 1.7027506401720855e-05,
+      "c_comp": 7.271629989725602e-12,
+      "w_stage2": 4.022261276161494e-05,
+      "l_stage2": 1.4416968020140145e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000009.scs",
+    "run_dir": "data\\raw\\opamp\\run_000009",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.013194561004638672,
+      "run_dir": "data\\raw\\opamp\\run_000009",
+      "log_path": "data\\raw\\opamp\\run_000009\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000009\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000009\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 58.892256,
+      "gbw_hz": 9611593.300248,
+      "pm_deg": 87.683796,
+      "power_w": 5.7331e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 1.1077439999999967,
+      "gbw_hz": 388406.69975199923
+    },
+    "margins": {
+      "gain_db": -1.1077439999999967,
+      "gbw_hz": -388406.69975199923,
+      "pm_deg": 27.683796,
+      "power_w": 0.001442669
+    }
+  },
+  {
+    "run_id": "run_000010",
+    "design": {
+      "w_in": 8.2189018063802e-06,
+      "l_in": 1.0177047830644362e-06,
+      "w_load": 2.0859286956260933e-05,
+      "l_load": 9.048722858886231e-07,
+      "w_tail": 3.832698422235456e-06,
+      "l_tail": 2.1303361754647375e-07,
+      "i_bias": 5.795869843581736e-05,
+      "c_comp": 4.575094532683081e-13,
+      "w_stage2": 4.244546445025118e-06,
+      "l_stage2": 1.387045908978933e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000010.scs",
+    "run_dir": "data\\raw\\opamp\\run_000010",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.013194561004638672,
+      "run_dir": "data\\raw\\opamp\\run_000010",
+      "log_path": "data\\raw\\opamp\\run_000010\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000010\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000010\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 58.812773,
+      "gbw_hz": 176205312.599101,
+      "pm_deg": 82.693677,
+      "power_w": 0.000129314
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 1.187227
+    },
+    "margins": {
+      "gain_db": -1.187227,
+      "gbw_hz": 166205312.599101,
+      "pm_deg": 22.693676999999994,
+      "power_w": 0.001370686
+    }
+  },
+  {
+    "run_id": "run_000011",
+    "design": {
+      "w_in": 1.67047854984331e-05,
+      "l_in": 3.709682716569116e-07,
+      "w_load": 3.547765522008518e-06,
+      "l_load": 4.812297283493798e-07,
+      "w_tail": 4.412345997106509e-06,
+      "l_tail": 3.668226532057279e-07,
+      "i_bias": 7.996366565069161e-06,
+      "c_comp": 6.932544524756473e-13,
+      "w_stage2": 7.598490790983699e-05,
+      "l_stage2": 9.195658190864925e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000011.scs",
+    "run_dir": "data\\raw\\opamp\\run_000011",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.010451555252075195,
+      "run_dir": "data\\raw\\opamp\\run_000011",
+      "log_path": "data\\raw\\opamp\\run_000011\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000011\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000011\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 63.563186,
+      "gbw_hz": 164835286.431507,
+      "pm_deg": 72.557887,
+      "power_w": 5.8055e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": true,
+    "violations": {},
+    "margins": {
+      "gain_db": 3.5631860000000017,
+      "gbw_hz": 154835286.431507,
+      "pm_deg": 12.557886999999994,
+      "power_w": 0.001441945
+    }
+  },
+  {
+    "run_id": "run_000012",
+    "design": {
+      "w_in": 5.639183620845416e-06,
+      "l_in": 3.011288363658606e-07,
+      "w_load": 6.9405934833584155e-06,
+      "l_load": 1.5764823181689715e-06,
+      "w_tail": 1.884861398602186e-05,
+      "l_tail": 2.708498215335849e-07,
+      "i_bias": 6.836243778886257e-06,
+      "c_comp": 1.0737520842139308e-12,
+      "w_stage2": 1.844512962117664e-05,
+      "l_stage2": 4.0345781662955465e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000012.scs",
+    "run_dir": "data\\raw\\opamp\\run_000012",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.015656471252441406,
+      "run_dir": "data\\raw\\opamp\\run_000012",
+      "log_path": "data\\raw\\opamp\\run_000012\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000012\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000012\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "simulation_failed": 1.0
+    },
+    "simulation_failed": true,
+    "failure_reasons": [
+      "simulation_failed flag found in metrics",
+      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+    ],
+    "metrics_complete": false,
+    "is_feasible": false,
+    "violations": {},
+    "margins": {}
+  },
+  {
+    "run_id": "run_000013",
+    "design": {
+      "w_in": 2.4574060157330295e-05,
+      "l_in": 1.0984513802001892e-06,
+      "w_load": 1.571565415021875e-05,
+      "l_load": 3.09166311214718e-07,
+      "w_tail": 2.0845777516229307e-06,
+      "l_tail": 1.9090422376171184e-07,
+      "i_bias": 1.233736599102625e-05,
+      "c_comp": 8.918107199200495e-13,
+      "w_stage2": 5.005821845599533e-05,
+      "l_stage2": 2.1450290159823693e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000013.scs",
+    "run_dir": "data\\raw\\opamp\\run_000013",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.015656471252441406,
+      "run_dir": "data\\raw\\opamp\\run_000013",
+      "log_path": "data\\raw\\opamp\\run_000013\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000013\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000013\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 58.019575,
+      "gbw_hz": 95171334.852239,
+      "pm_deg": 70.89711,
+      "power_w": 4.355e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 1.9804249999999968
+    },
+    "margins": {
+      "gain_db": -1.9804249999999968,
+      "gbw_hz": 85171334.852239,
+      "pm_deg": 10.897109999999998,
+      "power_w": 0.00145645
+    }
+  },
+  {
+    "run_id": "run_000014",
+    "design": {
+      "w_in": 5.059677618020231e-06,
+      "l_in": 8.200765043700481e-07,
+      "w_load": 2.2168446460987743e-06,
+      "l_load": 9.626982417657652e-07,
+      "w_tail": 6.1947228807069635e-06,
+      "l_tail": 3.2390754196171816e-07,
+      "i_bias": 5.623598364171212e-05,
+      "c_comp": 1.025863637685062e-13,
+      "w_stage2": 3.176354404460239e-05,
+      "l_stage2": 1.1496193759370705e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000014.scs",
+    "run_dir": "data\\raw\\opamp\\run_000014",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.015656471252441406,
+      "run_dir": "data\\raw\\opamp\\run_000014",
+      "log_path": "data\\raw\\opamp\\run_000014\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000014\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000014\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 53.903677,
+      "gbw_hz": 10245070626.738914,
+      "pm_deg": 57.373902,
+      "power_w": 0.00023003
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 6.096322999999998,
+      "pm_deg": 2.626097999999999
+    },
+    "margins": {
+      "gain_db": -6.096322999999998,
+      "gbw_hz": 10235070626.738914,
+      "pm_deg": -2.626097999999999,
+      "power_w": 0.00126997
+    }
+  },
+  {
+    "run_id": "run_000015",
+    "design": {
+      "w_in": 1.517359959864353e-06,
+      "l_in": 5.010399115226151e-07,
+      "w_load": 2.054722246198286e-06,
+      "l_load": 1.8074765416976998e-06,
+      "w_tail": 6.757707489131516e-06,
+      "l_tail": 2.031368705207408e-07,
+      "i_bias": 1.2537201272348994e-05,
+      "c_comp": 4.9736210759077295e-12,
+      "w_stage2": 8.183209145027974e-06,
+      "l_stage2": 1.2398236586351231e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000015.scs",
+    "run_dir": "data\\raw\\opamp\\run_000015",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.015656471252441406,
+      "run_dir": "data\\raw\\opamp\\run_000015",
+      "log_path": "data\\raw\\opamp\\run_000015\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000015\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000015\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 53.525375,
+      "gbw_hz": 44688979.74502,
+      "pm_deg": 73.157158,
+      "power_w": 5.7025e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 6.474625000000003
+    },
+    "margins": {
+      "gain_db": -6.474625000000003,
+      "gbw_hz": 34688979.74502,
+      "pm_deg": 13.157157999999995,
+      "power_w": 0.001442975
+    }
+  },
+  {
+    "run_id": "run_000016",
+    "design": {
+      "w_in": 1.362054681404267e-05,
+      "l_in": 1.9425331448302176e-06,
+      "w_load": 1.144996830859145e-05,
+      "l_load": 1.773305422028768e-06,
+      "w_tail": 2.679895200836172e-05,
+      "l_tail": 7.869701517788599e-07,
+      "i_bias": 7.100518127366607e-05,
+      "c_comp": 1.0222481414801e-12,
+      "w_stage2": 4.5828784571561265e-05,
+      "l_stage2": 6.733078863524313e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000016.scs",
+    "run_dir": "data\\raw\\opamp\\run_000016",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0010175704956054688,
+      "run_dir": "data\\raw\\opamp\\run_000016",
+      "log_path": "data\\raw\\opamp\\run_000016\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000016\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000016\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 55.90338,
+      "gbw_hz": 779055629.480889,
+      "pm_deg": 71.630898,
+      "power_w": 0.000238556
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 4.0966200000000015
+    },
+    "margins": {
+      "gain_db": -4.0966200000000015,
+      "gbw_hz": 769055629.480889,
+      "pm_deg": 11.630898000000002,
+      "power_w": 0.001261444
+    }
+  },
+  {
+    "run_id": "run_000017",
+    "design": {
+      "w_in": 3.3444881000717786e-05,
+      "l_in": 1.0788368048854101e-06,
+      "w_load": 6.9830144923126385e-06,
+      "l_load": 3.3598818707027935e-07,
+      "w_tail": 2.489389719683379e-06,
+      "l_tail": 8.358180178425368e-07,
+      "i_bias": 8.430424993224776e-05,
+      "c_comp": 1.103061243272678e-12,
+      "w_stage2": 1.7926556488466504e-05,
+      "l_stage2": 3.4868626625395137e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000017.scs",
+    "run_dir": "data\\raw\\opamp\\run_000017",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.012410879135131836,
+      "run_dir": "data\\raw\\opamp\\run_000017",
+      "log_path": "data\\raw\\opamp\\run_000017\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000017\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000017\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 59.933818,
+      "gbw_hz": 127685683.488924,
+      "pm_deg": 79.95035,
+      "power_w": 0.000190219
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 0.06618199999999774
+    },
+    "margins": {
+      "gain_db": -0.06618199999999774,
+      "gbw_hz": 117685683.488924,
+      "pm_deg": 19.95035,
+      "power_w": 0.001309781
+    }
+  },
+  {
+    "run_id": "run_000018",
+    "design": {
+      "w_in": 4.428492957477793e-06,
+      "l_in": 1.8257376798045404e-07,
+      "w_load": 4.221631821796976e-06,
+      "l_load": 1.104650163276497e-06,
+      "w_tail": 2.3295649118191266e-05,
+      "l_tail": 1.7878431846714799e-06,
+      "i_bias": 2.3456717461039574e-05,
+      "c_comp": 3.1263049478684345e-12,
+      "w_stage2": 1.2367007366172866e-05,
+      "l_stage2": 7.693579019080712e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000018.scs",
+    "run_dir": "data\\raw\\opamp\\run_000018",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.012410879135131836,
+      "run_dir": "data\\raw\\opamp\\run_000018",
+      "log_path": "data\\raw\\opamp\\run_000018\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000018\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000018\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 61.22252,
+      "gbw_hz": 62949100.883614,
+      "pm_deg": 79.360629,
+      "power_w": 8.411e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": true,
+    "violations": {},
+    "margins": {
+      "gain_db": 1.222520000000003,
+      "gbw_hz": 52949100.883614,
+      "pm_deg": 19.360629000000003,
+      "power_w": 0.00141589
+    }
+  },
+  {
+    "run_id": "run_000019",
+    "design": {
+      "w_in": 2.369674125210468e-06,
+      "l_in": 3.0530528560673846e-07,
+      "w_load": 5.956378478454194e-06,
+      "l_load": 1.9303027436976145e-07,
+      "w_tail": 3.4554108600321174e-06,
+      "l_tail": 9.236133859384217e-07,
+      "i_bias": 2.2218235401227692e-05,
+      "c_comp": 2.1384025439495935e-13,
+      "w_stage2": 8.605583015432347e-06,
+      "l_stage2": 2.447598791622514e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000019.scs",
+    "run_dir": "data\\raw\\opamp\\run_000019",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.012410879135131836,
+      "run_dir": "data\\raw\\opamp\\run_000019",
+      "log_path": "data\\raw\\opamp\\run_000019\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000019\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000019\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "simulation_failed": 1.0
+    },
+    "simulation_failed": true,
+    "failure_reasons": [
+      "simulation_failed flag found in metrics",
+      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+    ],
+    "metrics_complete": false,
+    "is_feasible": false,
+    "violations": {},
+    "margins": {}
+  },
+  {
+    "run_id": "run_000020",
+    "design": {
+      "w_in": 5.343199563805934e-06,
+      "l_in": 4.393390177193292e-07,
+      "w_load": 7.937336835991278e-06,
+      "l_load": 4.093714603719847e-07,
+      "w_tail": 2.2965247044490402e-05,
+      "l_tail": 1.3038607812785295e-06,
+      "i_bias": 7.379885207581339e-06,
+      "c_comp": 8.347859566079757e-12,
+      "w_stage2": 1.8671113208091645e-05,
+      "l_stage2": 1.3240347485438127e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000020.scs",
+    "run_dir": "data\\raw\\opamp\\run_000020",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.009950876235961914,
+      "run_dir": "data\\raw\\opamp\\run_000020",
+      "log_path": "data\\raw\\opamp\\run_000020\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000020\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000020\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 60.120193,
+      "gbw_hz": 9705256.352814,
+      "pm_deg": 85.082476,
+      "power_w": 5.3135e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gbw_hz": 294743.6471859999
+    },
+    "margins": {
+      "gain_db": 0.12019300000000044,
+      "gbw_hz": -294743.6471859999,
+      "pm_deg": 25.082476,
+      "power_w": 0.001446865
+    }
+  },
+  {
+    "run_id": "run_000021",
+    "design": {
+      "w_in": 1.4973579274934422e-05,
+      "l_in": 3.7626147595863463e-07,
+      "w_load": 1.08166752546002e-05,
+      "l_load": 5.625850746964378e-07,
+      "w_tail": 7.088735703395179e-06,
+      "l_tail": 5.014715561059863e-07,
+      "i_bias": 7.834356382913773e-05,
+      "c_comp": 4.587568841689936e-13,
+      "w_stage2": 2.5451294975563294e-05,
+      "l_stage2": 3.45609274165407e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000021.scs",
+    "run_dir": "data\\raw\\opamp\\run_000021",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000021",
+      "log_path": "data\\raw\\opamp\\run_000021\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000021\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000021\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "simulation_failed": 1.0
+    },
+    "simulation_failed": true,
+    "failure_reasons": [
+      "simulation_failed flag found in metrics",
+      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+    ],
+    "metrics_complete": false,
+    "is_feasible": false,
+    "violations": {},
+    "margins": {}
+  },
+  {
+    "run_id": "run_000022",
+    "design": {
+      "w_in": 2.6737900625210014e-06,
+      "l_in": 2.4068515262534786e-07,
+      "w_load": 2.2001080101076587e-06,
+      "l_load": 2.4004782278322984e-07,
+      "w_tail": 7.219152560357228e-06,
+      "l_tail": 1.1280750618164302e-06,
+      "i_bias": 9.898996240332328e-06,
+      "c_comp": 2.708752216858951e-13,
+      "w_stage2": 9.298163410635107e-06,
+      "l_stage2": 1.0304162464625484e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000022.scs",
+    "run_dir": "data\\raw\\opamp\\run_000022",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000022",
+      "log_path": "data\\raw\\opamp\\run_000022\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000022\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000022\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "simulation_failed": 1.0
+    },
+    "simulation_failed": true,
+    "failure_reasons": [
+      "simulation_failed flag found in metrics",
+      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+    ],
+    "metrics_complete": false,
+    "is_feasible": false,
+    "violations": {},
+    "margins": {}
+  },
+  {
+    "run_id": "run_000023",
+    "design": {
+      "w_in": 1.3757411622150682e-05,
+      "l_in": 1.4198854650786426e-06,
+      "w_load": 3.8586980605760385e-06,
+      "l_load": 9.565043416740392e-07,
+      "w_tail": 2.8956242078443077e-06,
+      "l_tail": 1.7527328612043762e-06,
+      "i_bias": 0.00010054294428457364,
+      "c_comp": 1.2594856332745565e-12,
+      "w_stage2": 8.121791144184496e-06,
+      "l_stage2": 3.8386735312601276e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000023.scs",
+    "run_dir": "data\\raw\\opamp\\run_000023",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000023",
+      "log_path": "data\\raw\\opamp\\run_000023\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000023\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000023\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 55.481023,
+      "gbw_hz": 140299995.337102,
+      "pm_deg": 83.665303,
+      "power_w": 0.000204057
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 4.518977
+    },
+    "margins": {
+      "gain_db": -4.518977,
+      "gbw_hz": 130299995.337102,
+      "pm_deg": 23.665302999999994,
+      "power_w": 0.001295943
+    }
+  },
+  {
+    "run_id": "run_000024",
+    "design": {
+      "w_in": 3.5418687699245894e-06,
+      "l_in": 1.861446036041044e-06,
+      "w_load": 5.232200560331107e-06,
+      "l_load": 6.214631622784123e-07,
+      "w_tail": 3.82847892438956e-05,
+      "l_tail": 8.770528830582027e-07,
+      "i_bias": 3.7003047517572686e-05,
+      "c_comp": 6.706487841911386e-13,
+      "w_stage2": 2.3722752768622256e-06,
+      "l_stage2": 4.301361859515672e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000024.scs",
+    "run_dir": "data\\raw\\opamp\\run_000024",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.010476827621459961,
+      "run_dir": "data\\raw\\opamp\\run_000024",
+      "log_path": "data\\raw\\opamp\\run_000024\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000024\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000024\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 51.254513,
+      "gbw_hz": 121482151.172901,
+      "pm_deg": 78.043919,
+      "power_w": 8.5645e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 8.745486999999997
+    },
+    "margins": {
+      "gain_db": -8.745486999999997,
+      "gbw_hz": 111482151.172901,
+      "pm_deg": 18.043919000000002,
+      "power_w": 0.001414355
+    }
+  },
+  {
+    "run_id": "run_000025",
+    "design": {
+      "w_in": 3.0236738825639434e-06,
+      "l_in": 3.6939373152739515e-07,
+      "w_load": 1.1057680696165223e-05,
+      "l_load": 1.994720736181952e-06,
+      "w_tail": 6.08741919673372e-06,
+      "l_tail": 2.574348133588213e-07,
+      "i_bias": 3.6459306196872807e-05,
+      "c_comp": 4.900584514890121e-13,
+      "w_stage2": 1.2700909870211867e-05,
+      "l_stage2": 6.66144680277065e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000025.scs",
+    "run_dir": "data\\raw\\opamp\\run_000025",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000025",
+      "log_path": "data\\raw\\opamp\\run_000025\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000025\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000025\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 59.264089,
+      "gbw_hz": 1041720870.444148,
+      "pm_deg": 66.992473,
+      "power_w": 0.000145499
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 0.7359110000000015
+    },
+    "margins": {
+      "gain_db": -0.7359110000000015,
+      "gbw_hz": 1031720870.444148,
+      "pm_deg": 6.992473000000004,
+      "power_w": 0.0013545010000000001
+    }
+  },
+  {
+    "run_id": "run_000026",
+    "design": {
+      "w_in": 5.937680783114134e-06,
+      "l_in": 3.9063718294278764e-07,
+      "w_load": 2.1649728488695846e-06,
+      "l_load": 9.653542444977876e-07,
+      "w_tail": 8.242408323016329e-06,
+      "l_tail": 3.1588003872433946e-07,
+      "i_bias": 8.738538005226112e-05,
+      "c_comp": 1.2226287337475178e-13,
+      "w_stage2": 3.086102192745135e-05,
+      "l_stage2": 9.834897640548612e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000026.scs",
+    "run_dir": "data\\raw\\opamp\\run_000026",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.005324363708496094,
+      "run_dir": "data\\raw\\opamp\\run_000026",
+      "log_path": "data\\raw\\opamp\\run_000026\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000026\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000026\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 57.187939,
+      "gbw_hz": 11578779463.355492,
+      "pm_deg": 55.597907,
+      "power_w": 0.000343004
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 2.812061,
+      "pm_deg": 4.402093000000001
+    },
+    "margins": {
+      "gain_db": -2.812061,
+      "gbw_hz": 11568779463.355492,
+      "pm_deg": -4.402093000000001,
+      "power_w": 0.001156996
+    }
+  },
+  {
+    "run_id": "run_000027",
+    "design": {
+      "w_in": 2.390888850188672e-05,
+      "l_in": 4.560550325023471e-07,
+      "w_load": 1.5140461807296514e-05,
+      "l_load": 1.2988990679457674e-06,
+      "w_tail": 3.7267434661256614e-05,
+      "l_tail": 5.932888011581887e-07,
+      "i_bias": 5.731623340646005e-06,
+      "c_comp": 1.0106069958100258e-12,
+      "w_stage2": 1.5148194007291055e-05,
+      "l_stage2": 1.4613967000701604e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000027.scs",
+    "run_dir": "data\\raw\\opamp\\run_000027",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.011789321899414062,
+      "run_dir": "data\\raw\\opamp\\run_000027",
+      "log_path": "data\\raw\\opamp\\run_000027\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000027\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000027\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 64.528636,
+      "gbw_hz": 10795475.737365,
+      "pm_deg": 84.119246,
+      "power_w": 2.9931e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": true,
+    "violations": {},
+    "margins": {
+      "gain_db": 4.528636000000006,
+      "gbw_hz": 795475.737365,
+      "pm_deg": 24.119246000000004,
+      "power_w": 0.001470069
+    }
+  },
+  {
+    "run_id": "run_000028",
+    "design": {
+      "w_in": 3.760151827930623e-06,
+      "l_in": 9.542749592362483e-07,
+      "w_load": 1.4305658593306065e-05,
+      "l_load": 1.3996274124346027e-06,
+      "w_tail": 2.3200746255723792e-05,
+      "l_tail": 1.4253976260263942e-06,
+      "i_bias": 2.0312709448054626e-05,
+      "c_comp": 4.2985532180046047e-13,
+      "w_stage2": 2.7380088681956786e-05,
+      "l_stage2": 1.1205277995444449e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000028.scs",
+    "run_dir": "data\\raw\\opamp\\run_000028",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.00472569465637207,
+      "run_dir": "data\\raw\\opamp\\run_000028",
+      "log_path": "data\\raw\\opamp\\run_000028\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000028\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000028\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "simulation_failed": 1.0
+    },
+    "simulation_failed": true,
+    "failure_reasons": [
+      "simulation_failed flag found in metrics",
+      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+    ],
+    "metrics_complete": false,
+    "is_feasible": false,
+    "violations": {},
+    "margins": {}
+  },
+  {
+    "run_id": "run_000029",
+    "design": {
+      "w_in": 2.7008463710374717e-06,
+      "l_in": 3.3287587627444786e-07,
+      "w_load": 1.0392261216614217e-06,
+      "l_load": 1.2494634962577259e-06,
+      "w_tail": 2.7783794708283526e-05,
+      "l_tail": 9.202146954929285e-07,
+      "i_bias": 8.954811082234457e-06,
+      "c_comp": 7.646444967643342e-13,
+      "w_stage2": 4.910562566905538e-06,
+      "l_stage2": 7.408495424235678e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000029.scs",
+    "run_dir": "data\\raw\\opamp\\run_000029",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0003864765167236328,
+      "run_dir": "data\\raw\\opamp\\run_000029",
+      "log_path": "data\\raw\\opamp\\run_000029\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000029\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000029\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 54.462409,
+      "gbw_hz": 69625535.654988,
+      "pm_deg": 73.864555,
+      "power_w": 3.3638e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 5.537590999999999
+    },
+    "margins": {
+      "gain_db": -5.537590999999999,
+      "gbw_hz": 59625535.654988006,
+      "pm_deg": 13.864554999999996,
+      "power_w": 0.0014663620000000001
+    }
+  },
+  {
+    "run_id": "run_000030",
+    "design": {
+      "w_in": 1.217692664799314e-05,
+      "l_in": 5.000307997219211e-07,
+      "w_load": 2.784277196224646e-06,
+      "l_load": 1.378019669491785e-06,
+      "w_tail": 2.085247378390824e-06,
+      "l_tail": 4.545360690974804e-07,
+      "i_bias": 2.972338771100265e-05,
+      "c_comp": 2.981339292185708e-13,
+      "w_stage2": 1.3926609066696202e-05,
+      "l_stage2": 7.184331886745885e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000030.scs",
+    "run_dir": "data\\raw\\opamp\\run_000030",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000030",
+      "log_path": "data\\raw\\opamp\\run_000030\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000030\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000030\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "simulation_failed": 1.0
+    },
+    "simulation_failed": true,
+    "failure_reasons": [
+      "simulation_failed flag found in metrics",
+      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+    ],
+    "metrics_complete": false,
+    "is_feasible": false,
+    "violations": {},
+    "margins": {}
+  },
+  {
+    "run_id": "run_000031",
+    "design": {
+      "w_in": 6.981114484570814e-06,
+      "l_in": 1.5878141693460605e-06,
+      "w_load": 3.227724719373407e-06,
+      "l_load": 1.2322149084843617e-06,
+      "w_tail": 9.387599338577674e-06,
+      "l_tail": 4.2045041332398994e-07,
+      "i_bias": 5.234437714847406e-05,
+      "c_comp": 1.7449473446214768e-12,
+      "w_stage2": 2.2674040459051182e-05,
+      "l_stage2": 1.021383305796129e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000031.scs",
+    "run_dir": "data\\raw\\opamp\\run_000031",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.001994609832763672,
+      "run_dir": "data\\raw\\opamp\\run_000031",
+      "log_path": "data\\raw\\opamp\\run_000031\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000031\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000031\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 48.977187,
+      "gbw_hz": 329040832.933687,
+      "pm_deg": 70.773122,
+      "power_w": 0.000167719
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 11.022813
+    },
+    "margins": {
+      "gain_db": -11.022813,
+      "gbw_hz": 319040832.933687,
+      "pm_deg": 10.773122,
+      "power_w": 0.001332281
+    }
+  },
+  {
+    "run_id": "run_000032",
+    "design": {
+      "w_in": 1.3180432593129245e-05,
+      "l_in": 1.3550952556965664e-06,
+      "w_load": 1.3095441689975679e-05,
+      "l_load": 1.5849431734449696e-06,
+      "w_tail": 1.0851166573435102e-05,
+      "l_tail": 3.7874018116553505e-07,
+      "i_bias": 2.542115042748502e-05,
+      "c_comp": 1.442605590058062e-12,
+      "w_stage2": 2.915543569723207e-05,
+      "l_stage2": 2.2363004847687583e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000032.scs",
+    "run_dir": "data\\raw\\opamp\\run_000032",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0030012130737304688,
+      "run_dir": "data\\raw\\opamp\\run_000032",
+      "log_path": "data\\raw\\opamp\\run_000032\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000032\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000032\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 57.698286,
+      "gbw_hz": 116043722.355114,
+      "pm_deg": 75.649725,
+      "power_w": 6.7713e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 2.301713999999997
+    },
+    "margins": {
+      "gain_db": -2.301713999999997,
+      "gbw_hz": 106043722.355114,
+      "pm_deg": 15.649725000000004,
+      "power_w": 0.001432287
+    }
+  },
+  {
+    "run_id": "run_000033",
+    "design": {
+      "w_in": 2.5183915552476087e-05,
+      "l_in": 5.743392312002543e-07,
+      "w_load": 2.7168053491950024e-05,
+      "l_load": 1.086406957591744e-06,
+      "w_tail": 3.488527545819698e-06,
+      "l_tail": 2.3752651092526505e-07,
+      "i_bias": 0.0001744145953666693,
+      "c_comp": 1.9121150950508e-13,
+      "w_stage2": 8.570386719394334e-05,
+      "l_stage2": 1.428140637959196e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000033.scs",
+    "run_dir": "data\\raw\\opamp\\run_000033",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.002000570297241211,
+      "run_dir": "data\\raw\\opamp\\run_000033",
+      "log_path": "data\\raw\\opamp\\run_000033\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000033\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000033\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "simulation_failed": 1.0
+    },
+    "simulation_failed": true,
+    "failure_reasons": [
+      "simulation_failed flag found in metrics",
+      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+    ],
+    "metrics_complete": false,
+    "is_feasible": false,
+    "violations": {},
+    "margins": {}
+  },
+  {
+    "run_id": "run_000034",
+    "design": {
+      "w_in": 1.3876720705097005e-05,
+      "l_in": 7.354964817704135e-07,
+      "w_load": 2.899895529871129e-05,
+      "l_load": 1.732167134683239e-06,
+      "w_tail": 1.4913409927459201e-06,
+      "l_tail": 3.160774484305037e-07,
+      "i_bias": 5.48353972888711e-06,
+      "c_comp": 5.867724171287345e-12,
+      "w_stage2": 1.3268284175023364e-05,
+      "l_stage2": 1.6308282558050254e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000034.scs",
+    "run_dir": "data\\raw\\opamp\\run_000034",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0029969215393066406,
+      "run_dir": "data\\raw\\opamp\\run_000034",
+      "log_path": "data\\raw\\opamp\\run_000034\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000034\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000034\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 62.643885,
+      "gbw_hz": 2978586.275638,
+      "pm_deg": 87.41627,
+      "power_w": 3.6497e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gbw_hz": 7021413.724362
+    },
+    "margins": {
+      "gain_db": 2.6438849999999974,
+      "gbw_hz": -7021413.724362,
+      "pm_deg": 27.416269999999997,
+      "power_w": 0.0014635030000000001
+    }
+  },
+  {
+    "run_id": "run_000035",
+    "design": {
+      "w_in": 1.8203576801816977e-05,
+      "l_in": 6.388963179203741e-07,
+      "w_load": 2.1179009305373155e-05,
+      "l_load": 5.666439951229641e-07,
+      "w_tail": 1.7637213465227212e-05,
+      "l_tail": 6.194338632570569e-07,
+      "i_bias": 7.4762027498709525e-06,
+      "c_comp": 1.0178349972295691e-12,
+      "w_stage2": 7.777343592851119e-05,
+      "l_stage2": 1.9981211520955781e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000035.scs",
+    "run_dir": "data\\raw\\opamp\\run_000035",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0029993057250976562,
+      "run_dir": "data\\raw\\opamp\\run_000035",
+      "log_path": "data\\raw\\opamp\\run_000035\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000035\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000035\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 62.47819,
+      "gbw_hz": 97814533.97363,
+      "pm_deg": 66.078518,
+      "power_w": 4.716e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": true,
+    "violations": {},
+    "margins": {
+      "gain_db": 2.478189999999998,
+      "gbw_hz": 87814533.97363,
+      "pm_deg": 6.0785180000000025,
+      "power_w": 0.00145284
+    }
+  },
+  {
+    "run_id": "run_000036",
+    "design": {
+      "w_in": 2.1413081637722268e-05,
+      "l_in": 1.4518584733876576e-06,
+      "w_load": 8.45705450236535e-06,
+      "l_load": 5.423428307579477e-07,
+      "w_tail": 3.502900316327846e-05,
+      "l_tail": 2.0839204216491914e-07,
+      "i_bias": 2.926360058306273e-05,
+      "c_comp": 6.356740885730948e-13,
+      "w_stage2": 2.3561069053681684e-05,
+      "l_stage2": 5.861041975478862e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000036.scs",
+    "run_dir": "data\\raw\\opamp\\run_000036",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0010008811950683594,
+      "run_dir": "data\\raw\\opamp\\run_000036",
+      "log_path": "data\\raw\\opamp\\run_000036\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000036\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000036\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 57.099029,
+      "gbw_hz": 152178760.459209,
+      "pm_deg": 78.510053,
+      "power_w": 8.2573e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 2.9009709999999984
+    },
+    "margins": {
+      "gain_db": -2.9009709999999984,
+      "gbw_hz": 142178760.459209,
+      "pm_deg": 18.510053,
+      "power_w": 0.001417427
+    }
+  },
+  {
+    "run_id": "run_000037",
+    "design": {
+      "w_in": 7.96893257699029e-06,
+      "l_in": 5.367212639578119e-07,
+      "w_load": 1.1927252308211548e-05,
+      "l_load": 2.2855415676472324e-07,
+      "w_tail": 1.3313514916124136e-05,
+      "l_tail": 1.403094421778469e-06,
+      "i_bias": 5.517947331305403e-05,
+      "c_comp": 3.450845059460318e-12,
+      "w_stage2": 2.7649025771995312e-05,
+      "l_stage2": 3.0208870493980157e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000037.scs",
+    "run_dir": "data\\raw\\opamp\\run_000037",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0020017623901367188,
+      "run_dir": "data\\raw\\opamp\\run_000037",
+      "log_path": "data\\raw\\opamp\\run_000037\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000037\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000037\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "simulation_failed": 1.0
+    },
+    "simulation_failed": true,
+    "failure_reasons": [
+      "simulation_failed flag found in metrics",
+      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+    ],
+    "metrics_complete": false,
+    "is_feasible": false,
+    "violations": {},
+    "margins": {}
+  },
+  {
+    "run_id": "run_000038",
+    "design": {
+      "w_in": 5.850301623401072e-06,
+      "l_in": 3.120479774565171e-07,
+      "w_load": 4.0056378471277935e-06,
+      "l_load": 5.364415142820823e-07,
+      "w_tail": 4.6391709419680925e-06,
+      "l_tail": 2.2631286040137823e-07,
+      "i_bias": 2.413634719955089e-05,
+      "c_comp": 2.139024338401888e-12,
+      "w_stage2": 5.605341114907305e-06,
+      "l_stage2": 2.599535807492649e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000038.scs",
+    "run_dir": "data\\raw\\opamp\\run_000038",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.00099945068359375,
+      "run_dir": "data\\raw\\opamp\\run_000038",
+      "log_path": "data\\raw\\opamp\\run_000038\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000038\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000038\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 59.828414,
+      "gbw_hz": 35352483.545746,
+      "pm_deg": 82.50523,
+      "power_w": 6.3428e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 0.1715859999999978
+    },
+    "margins": {
+      "gain_db": -0.1715859999999978,
+      "gbw_hz": 25352483.545746,
+      "pm_deg": 22.505229999999997,
+      "power_w": 0.0014365720000000001
+    }
+  },
+  {
+    "run_id": "run_000039",
+    "design": {
+      "w_in": 3.6312707756355418e-06,
+      "l_in": 2.4159992066798e-07,
+      "w_load": 4.25354339071455e-06,
+      "l_load": 8.934234300540075e-07,
+      "w_tail": 1.5922101181949762e-05,
+      "l_tail": 1.4557485703776497e-06,
+      "i_bias": 7.147472104947573e-05,
+      "c_comp": 8.645642047419237e-12,
+      "w_stage2": 1.5878891545693817e-05,
+      "l_stage2": 4.19767816067248e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000039.scs",
+    "run_dir": "data\\raw\\opamp\\run_000039",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000039",
+      "log_path": "data\\raw\\opamp\\run_000039\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000039\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000039\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 60.156982,
+      "gbw_hz": 109660679.10735,
+      "pm_deg": 83.058125,
+      "power_w": 0.000259262
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": true,
+    "violations": {},
+    "margins": {
+      "gain_db": 0.1569819999999993,
+      "gbw_hz": 99660679.10735,
+      "pm_deg": 23.058125000000004,
+      "power_w": 0.001240738
+    }
+  },
+  {
+    "run_id": "run_000040",
+    "design": {
+      "w_in": 9.59105160411388e-06,
+      "l_in": 3.004316650027362e-07,
+      "w_load": 1.4715549310430503e-05,
+      "l_load": 3.088717983455117e-07,
+      "w_tail": 1.4906385208564443e-06,
+      "l_tail": 1.3782502817316234e-06,
+      "i_bias": 1.940103315728862e-05,
+      "c_comp": 3.3512842375506307e-12,
+      "w_stage2": 1.4066952101205612e-05,
+      "l_stage2": 1.2572750593976266e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000040.scs",
+    "run_dir": "data\\raw\\opamp\\run_000040",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000040",
+      "log_path": "data\\raw\\opamp\\run_000040\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000040\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000040\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 61.392887,
+      "gbw_hz": 28675123.931824,
+      "pm_deg": 78.786467,
+      "power_w": 5.7461e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": true,
+    "violations": {},
+    "margins": {
+      "gain_db": 1.3928870000000018,
+      "gbw_hz": 18675123.931824,
+      "pm_deg": 18.786467000000002,
+      "power_w": 0.001442539
+    }
+  },
+  {
+    "run_id": "run_000041",
+    "design": {
+      "w_in": 1.562658710737948e-05,
+      "l_in": 3.787874294225949e-07,
+      "w_load": 4.020310890496086e-06,
+      "l_load": 1.826659837489182e-07,
+      "w_tail": 2.474983113200692e-05,
+      "l_tail": 7.038936251540837e-07,
+      "i_bias": 2.1930602691055803e-05,
+      "c_comp": 1.9219819657600518e-13,
+      "w_stage2": 1.8464775226530185e-05,
+      "l_stage2": 1.937904607890542e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000041.scs",
+    "run_dir": "data\\raw\\opamp\\run_000041",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.010684967041015625,
+      "run_dir": "data\\raw\\opamp\\run_000041",
+      "log_path": "data\\raw\\opamp\\run_000041\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000041\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000041\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 62.881211,
+      "gbw_hz": 401388880.134146,
+      "pm_deg": 70.980392,
+      "power_w": 5.0516e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": true,
+    "violations": {},
+    "margins": {
+      "gain_db": 2.8812110000000004,
+      "gbw_hz": 391388880.134146,
+      "pm_deg": 10.980391999999995,
+      "power_w": 0.001449484
+    }
+  },
+  {
+    "run_id": "run_000042",
+    "design": {
+      "w_in": 1.055498952453619e-05,
+      "l_in": 1.1227248747803864e-06,
+      "w_load": 1.4641789764067389e-05,
+      "l_load": 2.757556352969236e-07,
+      "w_tail": 1.7304099479697655e-05,
+      "l_tail": 5.915603881477198e-07,
+      "i_bias": 8.084207954636359e-05,
+      "c_comp": 3.3094383803852975e-12,
+      "w_stage2": 7.903337241040907e-06,
+      "l_stage2": 1.6661486410864348e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000042.scs",
+    "run_dir": "data\\raw\\opamp\\run_000042",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000042",
+      "log_path": "data\\raw\\opamp\\run_000042\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000042\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000042\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 59.47088,
+      "gbw_hz": 60127533.630529,
+      "pm_deg": 84.250209,
+      "power_w": 0.000177425
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 0.5291199999999989
+    },
+    "margins": {
+      "gain_db": -0.5291199999999989,
+      "gbw_hz": 50127533.630529,
+      "pm_deg": 24.250208999999998,
+      "power_w": 0.001322575
+    }
+  },
+  {
+    "run_id": "run_000043",
+    "design": {
+      "w_in": 7.269307021568103e-06,
+      "l_in": 5.484748125592684e-07,
+      "w_load": 9.67516430054057e-06,
+      "l_load": 1.2114957578325334e-06,
+      "w_tail": 2.724258554190118e-05,
+      "l_tail": 5.315999047479538e-07,
+      "i_bias": 9.916163671649605e-05,
+      "c_comp": 2.0122174426065044e-12,
+      "w_stage2": 4.3959579123384665e-06,
+      "l_stage2": 5.658028410052706e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000043.scs",
+    "run_dir": "data\\raw\\opamp\\run_000043",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000043",
+      "log_path": "data\\raw\\opamp\\run_000043\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000043\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000043\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 60.019725,
+      "gbw_hz": 99339107.576224,
+      "pm_deg": 85.752833,
+      "power_w": 0.000224818
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": true,
+    "violations": {},
+    "margins": {
+      "gain_db": 0.019725000000001103,
+      "gbw_hz": 89339107.576224,
+      "pm_deg": 25.752832999999995,
+      "power_w": 0.0012751820000000001
+    }
+  },
+  {
+    "run_id": "run_000044",
+    "design": {
+      "w_in": 1.8042987328854496e-06,
+      "l_in": 2.0891873640794408e-07,
+      "w_load": 1.5277137676826233e-06,
+      "l_load": 1.568704443306503e-06,
+      "w_tail": 3.5498329819991253e-06,
+      "l_tail": 1.005248285972174e-06,
+      "i_bias": 3.215790688157974e-05,
+      "c_comp": 2.2136951974340077e-13,
+      "w_stage2": 3.1295900129056818e-06,
+      "l_stage2": 5.164895030728692e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000044.scs",
+    "run_dir": "data\\raw\\opamp\\run_000044",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000044",
+      "log_path": "data\\raw\\opamp\\run_000044\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000044\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000044\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 55.705385,
+      "gbw_hz": 785369618.805608,
+      "pm_deg": 65.325356,
+      "power_w": 0.000100168
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 4.294615
+    },
+    "margins": {
+      "gain_db": -4.294615,
+      "gbw_hz": 775369618.805608,
+      "pm_deg": 5.325355999999999,
+      "power_w": 0.001399832
+    }
+  },
+  {
+    "run_id": "run_000045",
+    "design": {
+      "w_in": 5.57910382391582e-06,
+      "l_in": 6.337824056915744e-07,
+      "w_load": 1.915467414296932e-06,
+      "l_load": 4.4175884951992377e-07,
+      "w_tail": 2.839307856162391e-06,
+      "l_tail": 4.816661917747531e-07,
+      "i_bias": 1.7420253583744155e-05,
+      "c_comp": 1.5695376021798707e-12,
+      "w_stage2": 3.7883828607564856e-05,
+      "l_stage2": 8.554545308093612e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000045.scs",
+    "run_dir": "data\\raw\\opamp\\run_000045",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.007357597351074219,
+      "run_dir": "data\\raw\\opamp\\run_000045",
+      "log_path": "data\\raw\\opamp\\run_000045\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000045\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000045\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 54.166143,
+      "gbw_hz": 226421226.732874,
+      "pm_deg": 70.579821,
+      "power_w": 9.2247e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 5.833857000000002
+    },
+    "margins": {
+      "gain_db": -5.833857000000002,
+      "gbw_hz": 216421226.732874,
+      "pm_deg": 10.579820999999995,
+      "power_w": 0.001407753
+    }
+  },
+  {
+    "run_id": "run_000046",
+    "design": {
+      "w_in": 2.3688688213358824e-05,
+      "l_in": 2.681552645533664e-07,
+      "w_load": 6.0013576963646465e-06,
+      "l_load": 4.840954220208052e-07,
+      "w_tail": 1.2121991558928833e-05,
+      "l_tail": 3.1891246361151017e-07,
+      "i_bias": 2.5739670643639064e-05,
+      "c_comp": 3.7141194340043454e-13,
+      "w_stage2": 3.14103688405574e-05,
+      "l_stage2": 5.305695053702299e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000046.scs",
+    "run_dir": "data\\raw\\opamp\\run_000046",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000046",
+      "log_path": "data\\raw\\opamp\\run_000046\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000046\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000046\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "simulation_failed": 1.0
+    },
+    "simulation_failed": true,
+    "failure_reasons": [
+      "simulation_failed flag found in metrics",
+      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+    ],
+    "metrics_complete": false,
+    "is_feasible": false,
+    "violations": {},
+    "margins": {}
+  },
+  {
+    "run_id": "run_000047",
+    "design": {
+      "w_in": 8.07735043886487e-06,
+      "l_in": 3.7922841947191183e-07,
+      "w_load": 2.7406624369495215e-05,
+      "l_load": 5.568639289849574e-07,
+      "w_tail": 2.1772171906061344e-05,
+      "l_tail": 4.3646049663922213e-07,
+      "i_bias": 0.00016456192412483232,
+      "c_comp": 9.308497513216202e-12,
+      "w_stage2": 8.38223740407567e-06,
+      "l_stage2": 3.547622537223162e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000047.scs",
+    "run_dir": "data\\raw\\opamp\\run_000047",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000047",
+      "log_path": "data\\raw\\opamp\\run_000047\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000047\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000047\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 63.27372,
+      "gbw_hz": 59990312.222579,
+      "pm_deg": 88.37186,
+      "power_w": 0.000369348
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": true,
+    "violations": {},
+    "margins": {
+      "gain_db": 3.2737199999999973,
+      "gbw_hz": 49990312.222579,
+      "pm_deg": 28.371859999999998,
+      "power_w": 0.001130652
+    }
+  },
+  {
+    "run_id": "run_000048",
+    "design": {
+      "w_in": 2.3836139231460456e-06,
+      "l_in": 5.333876797406676e-07,
+      "w_load": 4.184226096700603e-06,
+      "l_load": 1.9193892447232375e-07,
+      "w_tail": 1.217084490565606e-06,
+      "l_tail": 6.029068325430939e-07,
+      "i_bias": 1.1931653239485733e-05,
+      "c_comp": 9.751034712499292e-12,
+      "w_stage2": 5.6211522297172115e-06,
+      "l_stage2": 1.926414959022076e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000048.scs",
+    "run_dir": "data\\raw\\opamp\\run_000048",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000048",
+      "log_path": "data\\raw\\opamp\\run_000048\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000048\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000048\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 54.538503,
+      "gbw_hz": 8753334.375456,
+      "pm_deg": 87.603241,
+      "power_w": 4.9698e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 5.461497000000001,
+      "gbw_hz": 1246665.6245440003
+    },
+    "margins": {
+      "gain_db": -5.461497000000001,
+      "gbw_hz": -1246665.6245440003,
+      "pm_deg": 27.603240999999997,
+      "power_w": 0.001450302
+    }
+  },
+  {
+    "run_id": "run_000049",
+    "design": {
+      "w_in": 2.1861092178626422e-05,
+      "l_in": 4.1290704713310105e-07,
+      "w_load": 2.01038851132993e-05,
+      "l_load": 8.171032344132197e-07,
+      "w_tail": 1.721834814353812e-05,
+      "l_tail": 1.0570603951504574e-06,
+      "i_bias": 1.704844462056597e-05,
+      "c_comp": 1.2265107996203728e-13,
+      "w_stage2": 1.2360256701827653e-05,
+      "l_stage2": 1.2764549590119567e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000049.scs",
+    "run_dir": "data\\raw\\opamp\\run_000049",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.01227259635925293,
+      "run_dir": "data\\raw\\opamp\\run_000049",
+      "log_path": "data\\raw\\opamp\\run_000049\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000049\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000049\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 63.037064,
+      "gbw_hz": 222947996.708951,
+      "pm_deg": 76.422155,
+      "power_w": 6.9585e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": true,
+    "violations": {},
+    "margins": {
+      "gain_db": 3.037064000000001,
+      "gbw_hz": 212947996.708951,
+      "pm_deg": 16.422155000000004,
+      "power_w": 0.001430415
+    }
+  },
+  {
+    "run_id": "run_000050",
+    "design": {
+      "w_in": 1.9836779915154908e-06,
+      "l_in": 1.175078035271306e-06,
+      "w_load": 6.701465561929288e-06,
+      "l_load": 9.604638516184656e-07,
+      "w_tail": 1.0282026687887603e-05,
+      "l_tail": 1.2702882603188174e-06,
+      "i_bias": 6.3104575577345445e-06,
+      "c_comp": 3.567638150550126e-12,
+      "w_stage2": 8.22922913288635e-06,
+      "l_stage2": 3.6487345744616714e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000050.scs",
+    "run_dir": "data\\raw\\opamp\\run_000050",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000050",
+      "log_path": "data\\raw\\opamp\\run_000050\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000050\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000050\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 50.697654,
+      "gbw_hz": 21845008.634553,
+      "pm_deg": 75.485585,
+      "power_w": 2.2495e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 9.302346
+    },
+    "margins": {
+      "gain_db": -9.302346,
+      "gbw_hz": 11845008.634553,
+      "pm_deg": 15.485585,
+      "power_w": 0.001477505
+    }
+  },
+  {
+    "run_id": "run_000051",
+    "design": {
+      "w_in": 9.198809634511478e-06,
+      "l_in": 7.727783649559807e-07,
+      "w_load": 1.6124083762459354e-05,
+      "l_load": 1.7681203312985285e-06,
+      "w_tail": 3.944461758033079e-06,
+      "l_tail": 1.1305084359016196e-06,
+      "i_bias": 4.1536234584232224e-05,
+      "c_comp": 1.1453013247831673e-12,
+      "w_stage2": 6.252707196644635e-06,
+      "l_stage2": 8.60112998649104e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000051.scs",
+    "run_dir": "data\\raw\\opamp\\run_000051",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.006133079528808594,
+      "run_dir": "data\\raw\\opamp\\run_000051",
+      "log_path": "data\\raw\\opamp\\run_000051\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000051\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000051\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 61.107215,
+      "gbw_hz": 81036621.423451,
+      "pm_deg": 80.272107,
+      "power_w": 9.5047e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": true,
+    "violations": {},
+    "margins": {
+      "gain_db": 1.1072149999999965,
+      "gbw_hz": 71036621.423451,
+      "pm_deg": 20.272107000000005,
+      "power_w": 0.001404953
+    }
+  },
+  {
+    "run_id": "run_000052",
+    "design": {
+      "w_in": 5.432572014446694e-06,
+      "l_in": 1.6130828882911178e-06,
+      "w_load": 1.2546784205551014e-06,
+      "l_load": 2.427252332204884e-07,
+      "w_tail": 1.7584902205618629e-06,
+      "l_tail": 2.6758630326888803e-07,
+      "i_bias": 1.6439624159412593e-05,
+      "c_comp": 2.6221906534727386e-12,
+      "w_stage2": 4.920918413353736e-06,
+      "l_stage2": 1.7347223280883767e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000052.scs",
+    "run_dir": "data\\raw\\opamp\\run_000052",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0020089149475097656,
+      "run_dir": "data\\raw\\opamp\\run_000052",
+      "log_path": "data\\raw\\opamp\\run_000052\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000052\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000052\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 50.273818,
+      "gbw_hz": 18930376.656206,
+      "pm_deg": 84.270525,
+      "power_w": 5.9692e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 9.726182000000001
+    },
+    "margins": {
+      "gain_db": -9.726182000000001,
+      "gbw_hz": 8930376.656206,
+      "pm_deg": 24.270525000000006,
+      "power_w": 0.001440308
+    }
+  },
+  {
+    "run_id": "run_000053",
+    "design": {
+      "w_in": 2.847254918892925e-06,
+      "l_in": 3.269907998118439e-07,
+      "w_load": 1.48643444644629e-06,
+      "l_load": 3.620461079836768e-07,
+      "w_tail": 4.1250676848700136e-06,
+      "l_tail": 7.92151186172002e-07,
+      "i_bias": 1.249435633056268e-05,
+      "c_comp": 5.3779282461021695e-12,
+      "w_stage2": 2.0864084082172716e-06,
+      "l_stage2": 3.959961534526005e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000053.scs",
+    "run_dir": "data\\raw\\opamp\\run_000053",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000053",
+      "log_path": "data\\raw\\opamp\\run_000053\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000053\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000053\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 54.908045,
+      "gbw_hz": 5306363.536966,
+      "pm_deg": 84.793418,
+      "power_w": 4.799e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 5.091954999999999,
+      "gbw_hz": 4693636.463034
+    },
+    "margins": {
+      "gain_db": -5.091954999999999,
+      "gbw_hz": -4693636.463034,
+      "pm_deg": 24.793418000000003,
+      "power_w": 0.00145201
+    }
+  },
+  {
+    "run_id": "run_000054",
+    "design": {
+      "w_in": 9.582370291245805e-06,
+      "l_in": 3.8220509840400135e-07,
+      "w_load": 2.27481051681084e-05,
+      "l_load": 5.974993373909399e-07,
+      "w_tail": 6.677594941110464e-06,
+      "l_tail": 5.982107403604624e-07,
+      "i_bias": 1.5605236912606876e-05,
+      "c_comp": 1.112634690194342e-13,
+      "w_stage2": 7.770797792634962e-05,
+      "l_stage2": 6.079177699615349e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000054.scs",
+    "run_dir": "data\\raw\\opamp\\run_000054",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000054",
+      "log_path": "data\\raw\\opamp\\run_000054\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000054\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000054\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 62.979818,
+      "gbw_hz": 3417081996.149254,
+      "pm_deg": 57.929081,
+      "power_w": 9.1954e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "pm_deg": 2.0709190000000035
+    },
+    "margins": {
+      "gain_db": 2.9798180000000016,
+      "gbw_hz": 3407081996.149254,
+      "pm_deg": -2.0709190000000035,
+      "power_w": 0.001408046
+    }
+  },
+  {
+    "run_id": "run_000055",
+    "design": {
+      "w_in": 5.3967630970245275e-06,
+      "l_in": 1.5069789840652818e-06,
+      "w_load": 1.966162336312358e-05,
+      "l_load": 1.1326127283587553e-06,
+      "w_tail": 3.857035106453415e-06,
+      "l_tail": 4.7226279802455105e-07,
+      "i_bias": 4.0982213340163706e-05,
+      "c_comp": 2.450815417855993e-13,
+      "w_stage2": 1.2777498929507595e-05,
+      "l_stage2": 2.1486658589115695e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000055.scs",
+    "run_dir": "data\\raw\\opamp\\run_000055",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000055",
+      "log_path": "data\\raw\\opamp\\run_000055\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000055\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000055\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "simulation_failed": 1.0
+    },
+    "simulation_failed": true,
+    "failure_reasons": [
+      "simulation_failed flag found in metrics",
+      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+    ],
+    "metrics_complete": false,
+    "is_feasible": false,
+    "violations": {},
+    "margins": {}
+  },
+  {
+    "run_id": "run_000056",
+    "design": {
+      "w_in": 7.189770346521436e-06,
+      "l_in": 1.1341064851580477e-06,
+      "w_load": 3.1432988429630336e-06,
+      "l_load": 1.9481460583450567e-06,
+      "w_tail": 1.2303805000103107e-05,
+      "l_tail": 2.3961832000163283e-07,
+      "i_bias": 0.0001824362644752673,
+      "c_comp": 6.134899115938078e-13,
+      "w_stage2": 3.888610609635192e-05,
+      "l_stage2": 4.0726163219832366e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000056.scs",
+    "run_dir": "data\\raw\\opamp\\run_000056",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000056",
+      "log_path": "data\\raw\\opamp\\run_000056\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000056\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000056\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 53.398374,
+      "gbw_hz": 5259246238.816271,
+      "pm_deg": 65.806312,
+      "power_w": 0.000695259
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 6.601626000000003
+    },
+    "margins": {
+      "gain_db": -6.601626000000003,
+      "gbw_hz": 5249246238.816271,
+      "pm_deg": 5.8063120000000055,
+      "power_w": 0.000804741
+    }
+  },
+  {
+    "run_id": "run_000057",
+    "design": {
+      "w_in": 8.02471104231895e-06,
+      "l_in": 9.918419355970813e-07,
+      "w_load": 3.4125024161431463e-06,
+      "l_load": 1.2833584009908421e-06,
+      "w_tail": 3.891627912434187e-06,
+      "l_tail": 9.118230934034729e-07,
+      "i_bias": 0.00018570578620854254,
+      "c_comp": 1.470294334274414e-12,
+      "w_stage2": 3.9220184094617575e-05,
+      "l_stage2": 1.0322520011085019e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000057.scs",
+    "run_dir": "data\\raw\\opamp\\run_000057",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000057",
+      "log_path": "data\\raw\\opamp\\run_000057\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000057\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000057\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 55.169089,
+      "gbw_hz": 1872559134.48485,
+      "pm_deg": 74.639415,
+      "power_w": 0.000679106
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 4.830911
+    },
+    "margins": {
+      "gain_db": -4.830911,
+      "gbw_hz": 1862559134.48485,
+      "pm_deg": 14.639415,
+      "power_w": 0.0008208940000000001
+    }
+  },
+  {
+    "run_id": "run_000058",
+    "design": {
+      "w_in": 1.4755893941772713e-05,
+      "l_in": 1.919282780982579e-07,
+      "w_load": 6.980606906313508e-06,
+      "l_load": 1.847540339071773e-06,
+      "w_tail": 1.7958049392407424e-05,
+      "l_tail": 1.166674637589521e-06,
+      "i_bias": 4.2109003064000936e-05,
+      "c_comp": 2.7720446711225e-12,
+      "w_stage2": 1.4690837472920014e-05,
+      "l_stage2": 2.7138558193081605e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000058.scs",
+    "run_dir": "data\\raw\\opamp\\run_000058",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000058",
+      "log_path": "data\\raw\\opamp\\run_000058\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000058\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000058\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 63.826426,
+      "gbw_hz": 42903262.329016,
+      "pm_deg": 86.277563,
+      "power_w": 0.000126317
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": true,
+    "violations": {},
+    "margins": {
+      "gain_db": 3.826425999999998,
+      "gbw_hz": 32903262.329016,
+      "pm_deg": 26.277563,
+      "power_w": 0.0013736830000000001
+    }
+  },
+  {
+    "run_id": "run_000059",
+    "design": {
+      "w_in": 1.808327826506306e-06,
+      "l_in": 9.492231582759161e-07,
+      "w_load": 5.3667714840403055e-06,
+      "l_load": 1.1633371436343998e-06,
+      "w_tail": 2.983525712460434e-05,
+      "l_tail": 1.4724079785366335e-06,
+      "i_bias": 7.547888165796316e-05,
+      "c_comp": 1.3321789653964486e-13,
+      "w_stage2": 1.8887086597575359e-06,
+      "l_stage2": 2.965525386512733e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000059.scs",
+    "run_dir": "data\\raw\\opamp\\run_000059",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000059",
+      "log_path": "data\\raw\\opamp\\run_000059\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000059\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000059\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 51.061563,
+      "gbw_hz": 2038821579.701132,
+      "pm_deg": 73.688364,
+      "power_w": 0.00020926
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 8.938437
+    },
+    "margins": {
+      "gain_db": -8.938437,
+      "gbw_hz": 2028821579.701132,
+      "pm_deg": 13.688364000000007,
+      "power_w": 0.00129074
+    }
+  },
+  {
+    "run_id": "run_000060",
+    "design": {
+      "w_in": 3.5665589684366913e-06,
+      "l_in": 8.867498860883055e-07,
+      "w_load": 8.597612233206066e-06,
+      "l_load": 3.831612976537558e-07,
+      "w_tail": 1.8942994469191344e-06,
+      "l_tail": 1.6185763065738613e-06,
+      "i_bias": 1.7676587335163708e-05,
+      "c_comp": 5.111801455387842e-13,
+      "w_stage2": 3.499287039885009e-05,
+      "l_stage2": 1.021373922248397e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000060.scs",
+    "run_dir": "data\\raw\\opamp\\run_000060",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000060",
+      "log_path": "data\\raw\\opamp\\run_000060\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000060\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000060\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "simulation_failed": 1.0
+    },
+    "simulation_failed": true,
+    "failure_reasons": [
+      "simulation_failed flag found in metrics",
+      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+    ],
+    "metrics_complete": false,
+    "is_feasible": false,
+    "violations": {},
+    "margins": {}
+  },
+  {
+    "run_id": "run_000061",
+    "design": {
+      "w_in": 9.450076963948526e-06,
+      "l_in": 6.529982347604061e-07,
+      "w_load": 1.931134860570371e-05,
+      "l_load": 1.7171234734319662e-06,
+      "w_tail": 2.9043490293646926e-05,
+      "l_tail": 2.7437706451770234e-07,
+      "i_bias": 0.00012953268815038145,
+      "c_comp": 2.246867255179188e-13,
+      "w_stage2": 6.906684595122127e-05,
+      "l_stage2": 1.9864259842975525e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000061.scs",
+    "run_dir": "data\\raw\\opamp\\run_000061",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000061",
+      "log_path": "data\\raw\\opamp\\run_000061\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000061\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000061\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 61.222817,
+      "gbw_hz": 14045176609.489922,
+      "pm_deg": 59.997752,
+      "power_w": 0.000598711
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "pm_deg": 0.002248000000001582
+    },
+    "margins": {
+      "gain_db": 1.2228169999999992,
+      "gbw_hz": 14035176609.489922,
+      "pm_deg": -0.002248000000001582,
+      "power_w": 0.000901289
+    }
+  },
+  {
+    "run_id": "run_000062",
+    "design": {
+      "w_in": 3.0441196024994597e-06,
+      "l_in": 1.9481871966146503e-06,
+      "w_load": 9.248481542709945e-06,
+      "l_load": 5.912690117748528e-07,
+      "w_tail": 3.188821645151468e-05,
+      "l_tail": 1.3972515550698335e-06,
+      "i_bias": 2.8103949310448286e-05,
+      "c_comp": 2.430092452315826e-13,
+      "w_stage2": 1.6799390372375102e-06,
+      "l_stage2": 2.6619635064739145e-07
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000062.scs",
+    "run_dir": "data\\raw\\opamp\\run_000062",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.0,
+      "run_dir": "data\\raw\\opamp\\run_000062",
+      "log_path": "data\\raw\\opamp\\run_000062\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000062\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000062\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 49.014885,
+      "gbw_hz": 198930562.554386,
+      "pm_deg": 73.190613,
+      "power_w": 7.8374e-05
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 10.985115
+    },
+    "margins": {
+      "gain_db": -10.985115,
+      "gbw_hz": 188930562.554386,
+      "pm_deg": 13.190612999999999,
+      "power_w": 0.001421626
+    }
+  },
+  {
+    "run_id": "run_000063",
+    "design": {
+      "w_in": 6.021184303945902e-06,
+      "l_in": 3.344330431241767e-07,
+      "w_load": 2.1433352550337945e-06,
+      "l_load": 1.0607088368173446e-06,
+      "w_tail": 1.8486608225903598e-05,
+      "l_tail": 7.063728061041604e-07,
+      "i_bias": 8.169254022764931e-05,
+      "c_comp": 2.243829366760979e-13,
+      "w_stage2": 5.1557637484546556e-05,
+      "l_stage2": 1.5608518827782646e-06
+    },
+    "netlist_path": "netlists\\generated\\opamp\\run_000063.scs",
+    "run_dir": "data\\raw\\opamp\\run_000063",
+    "runner_result": {
+      "success": true,
+      "return_code": 0,
+      "runtime_sec": 0.015738248825073242,
+      "run_dir": "data\\raw\\opamp\\run_000063",
+      "log_path": "data\\raw\\opamp\\run_000063\\spectre.out",
+      "stderr_path": "data\\raw\\opamp\\run_000063\\spectre.err",
+      "metrics_path": "data\\raw\\opamp\\run_000063\\metrics.txt",
+      "error_message": "",
+      "mode": "mock"
+    },
+    "metrics": {
+      "gain_db": 57.957917,
+      "gbw_hz": 9365880928.215624,
+      "pm_deg": 60.621177,
+      "power_w": 0.000417176
+    },
+    "simulation_failed": false,
+    "failure_reasons": [],
+    "metrics_complete": true,
+    "is_feasible": false,
+    "violations": {
+      "gain_db": 2.042082999999998
+    },
+    "margins": {
+      "gain_db": -2.042082999999998,
+      "gbw_hz": 9355880928.215624,
+      "pm_deg": 0.621177000000003,
+      "power_w": 0.001082824
+    }
+  }
+]

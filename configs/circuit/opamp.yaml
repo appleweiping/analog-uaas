@@ -1,77 +1,111 @@
-circuit_name: two_stage_opamp
-topology: fixed
-process: fixed_pdk
-supply_voltage: 1.8
+name: two_stage_opamp
 
-design_variables:
-  W_in:
-    type: continuous
-    min: 1.0e-6
-    max: 50.0e-6
-    scale: log
-  L_in:
-    type: continuous
-    min: 0.18e-6
-    max: 1.0e-6
-    scale: linear
-  W_load:
-    type: continuous
-    min: 1.0e-6
-    max: 50.0e-6
-    scale: log
-  L_load:
-    type: continuous
-    min: 0.18e-6
-    max: 1.0e-6
-    scale: linear
-  W_stage2:
-    type: continuous
-    min: 1.0e-6
-    max: 100.0e-6
-    scale: log
-  L_stage2:
-    type: continuous
-    min: 0.18e-6
-    max: 1.0e-6
-    scale: linear
-  I_bias:
-    type: continuous
-    min: 1.0e-6
-    max: 100.0e-6
-    scale: log
-  Cc:
-    type: continuous
-    min: 0.1e-12
-    max: 10.0e-12
-    scale: log
+paths:
+  template_netlist: netlists/templates/opamp_template.scs
+  generated_netlists_dir: netlists/generated/opamp
+  raw_results_dir: data/raw/opamp
+  processed_results_dir: data/processed/opamp
+
+simulation:
+  simulator: spectre
+  spectre_binary: spectre
+  use_mock: true
+  timeout_sec: 120
+  max_workers: 4
+  log_filename: spectre.out
+  metrics_filename: metrics.txt
+  stderr_filename: spectre.err
+
+  # 如果后面需要通过 OCEAN / SKILL / shell 脚本导出 gain / gbw / pm / power，
+  # 可以把命令模板写在这里，支持 {run_dir} 和 {netlist_path}
+  # 例如：
+  # extract_metrics_cmd: "ocean -nograph -restore scripts/extract_metrics.ocn -log {run_dir}/ocean.log"
+  extract_metrics_cmd: ""
+
+environment:
+  vdd: 1.8
+  cload: 1.0e-12
+  temp: 27.0
+
+design_space:
+  parameters:
+    w_in:
+      low: 1.0e-6
+      high: 50.0e-6
+      scale: log
+
+    l_in:
+      low: 0.18e-6
+      high: 2.0e-6
+      scale: log
+
+    w_load:
+      low: 1.0e-6
+      high: 60.0e-6
+      scale: log
+
+    l_load:
+      low: 0.18e-6
+      high: 2.0e-6
+      scale: log
+
+    w_tail:
+      low: 1.0e-6
+      high: 40.0e-6
+      scale: log
+
+    l_tail:
+      low: 0.18e-6
+      high: 2.0e-6
+      scale: log
+
+    i_bias:
+      low: 5.0e-6
+      high: 200.0e-6
+      scale: log
+
+    c_comp:
+      low: 0.1e-12
+      high: 10.0e-12
+      scale: log
+
+    w_stage2:
+      low: 1.0e-6
+      high: 100.0e-6
+      scale: log
+
+    l_stage2:
+      low: 0.18e-6
+      high: 2.0e-6
+      scale: log
+
+  coupling_constraints:
+    - type: ratio_min
+      numerator: w_stage2
+      denominator: w_in
+      value: 0.5
+
+    - type: ratio_max
+      numerator: w_stage2
+      denominator: w_in
+      value: 10.0
+
+    - type: ratio_min
+      numerator: w_load
+      denominator: w_in
+      value: 0.2
+
+    - type: ratio_max
+      numerator: w_load
+      denominator: w_in
+      value: 4.0
 
 constraints:
-  gain_db:
-    type: lower_bound
-    value: 60.0
-  gbw_hz:
-    type: lower_bound
-    value: 1.0e6
-  phase_margin_deg:
-    type: lower_bound
-    value: 60.0
-  power_w:
-    type: upper_bound
-    value: 1.0e-3
+  gain_db_min: 60.0
+  gbw_hz_min: 1.0e7
+  pm_deg_min: 60.0
+  power_w_max: 1.5e-3
 
-objective:
-  type: weighted_feasible_score
-  preference:
-    maximize:
-      - gain_db
-      - gbw_hz
-    minimize:
-      - power_w
-
-boundary_annotation:
-  margin_ratio: 0.05
-  near_boundary_threshold:
-    gain_db: 2.0
-    gbw_hz: 1.0e5
-    phase_margin_deg: 3.0
-    power_w: 1.0e-4
+sampling:
+  seed: 42
+  n_initial: 64

@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "return_code": 0,
+  "runtime_sec": 0.002116680145263672,
+  "run_dir": "data\\raw\\opamp\\run_000003",
+  "log_path": "data\\raw\\opamp\\run_000003\\spectre.out",
+  "stderr_path": "data\\raw\\opamp\\run_000003\\spectre.err",
+  "metrics_path": "data\\raw\\opamp\\run_000003\\metrics.txt",
+  "error_message": "",
+  "mode": "mock"
+}

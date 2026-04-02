@@ -1,0 +1,40 @@
+{
+  "run_id": "run_000019",
+  "design": {
+    "w_in": 2.369674125210468e-06,
+    "l_in": 3.0530528560673846e-07,
+    "w_load": 5.956378478454194e-06,
+    "l_load": 1.9303027436976145e-07,
+    "w_tail": 3.4554108600321174e-06,
+    "l_tail": 9.236133859384217e-07,
+    "i_bias": 2.2218235401227692e-05,
+    "c_comp": 2.1384025439495935e-13,
+    "w_stage2": 8.605583015432347e-06,
+    "l_stage2": 2.447598791622514e-07
+  },
+  "netlist_path": "netlists\\generated\\opamp\\run_000019.scs",
+  "run_dir": "data\\raw\\opamp\\run_000019",
+  "runner_result": {
+    "success": true,
+    "return_code": 0,
+    "runtime_sec": 0.012410879135131836,
+    "run_dir": "data\\raw\\opamp\\run_000019",
+    "log_path": "data\\raw\\opamp\\run_000019\\spectre.out",
+    "stderr_path": "data\\raw\\opamp\\run_000019\\spectre.err",
+    "metrics_path": "data\\raw\\opamp\\run_000019\\metrics.txt",
+    "error_message": "",
+    "mode": "mock"
+  },
+  "metrics": {
+    "simulation_failed": 1.0
+  },
+  "simulation_failed": true,
+  "failure_reasons": [
+    "simulation_failed flag found in metrics",
+    "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+  ],
+  "metrics_complete": false,
+  "is_feasible": false,
+  "violations": {},
+  "margins": {}
+}

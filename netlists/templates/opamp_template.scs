@@ -1,0 +1,63 @@
+simulator lang=spectre
+global 0
+
+// ===== user / tech include =====
+// include "your_pdk_model.scs"
+
+// ===== parameters injected by python =====
+parameters \
+  W_IN={w_in} \
+  L_IN={l_in} \
+  W_LOAD={w_load} \
+  L_LOAD={l_load} \
+  W_TAIL={w_tail} \
+  L_TAIL={l_tail} \
+  IBIAS={i_bias} \
+  CCOMP={c_comp} \
+  W_STAGE2={w_stage2} \
+  L_STAGE2={l_stage2} \
+  VDD={vdd} \
+  CLOAD={cload} \
+  TEMP={temp}
+
+// ===== supplies =====
+VDD (vdd 0) vsource dc=VDD
+VINP (vinp 0) vsource dc=0.9 ac=0.5
+VINN (vinn 0) vsource dc=0.9 ac=-0.5
+
+// ===== placeholder two-stage opamp netlist =====
+// 你需要按自己的真实电路替换下面器件定义
+// 这里先只保留结构示意，确保模板注入能跑通
+
+I0 (tail 0) isource dc=IBIAS
+
+// input pair
+M1 (n1 vinp tail 0) nch w=W_IN l=L_IN
+M2 (n2 vinn tail 0) nch w=W_IN l=L_IN
+
+// active load
+M3 (n1 n1 vdd vdd) pch w=W_LOAD l=L_LOAD
+M4 (n2 n1 vdd vdd) pch w=W_LOAD l=L_LOAD
+
+// second stage
+M5 (vout n2 0 0) nch w=W_STAGE2 l=L_STAGE2
+M6 (vout vout vdd vdd) pch w=W_LOAD l=L_LOAD
+
+CC (n2 vout) capacitor c=CCOMP
+CL (vout 0) capacitor c=CLOAD
+
+// ===== analyses =====
+simulatorOptions options temp=TEMP
+ac ac start=1 stop=1e9 dec=100
+dcOp dc
+
+saveOptions options save=allpub
+save v(vout) v(n1) v(n2)
+
+// ===== notes =====
+// 真正项目里，建议你通过 OCEAN / calculator 把 gain / gbw / pm / power
+// 导出到 run_dir/metrics.txt，格式如下：
+// gain_db=63.2
+// gbw_hz=1.25e7
+// pm_deg=67.8
+// power_w=8.5e-4

@@ -1,36 +1,48 @@
-import json
-import os
-import uuid
+from __future__ import annotations
+
+import argparse
 from pathlib import Path
+from typing import Dict, Any, List
 
-OUTPUT_PATH = Path("data/interim/initial_designs.json")
+from src.utils.io import load_yaml, dump_json
+from src.circuits.opamp_design_space import TwoStageOpAmpCircuit
 
 
-def main():
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+def build_samples(config: Dict[str, Any], n: int, seed: int) -> List[Dict[str, Any]]:
+    circuit = TwoStageOpAmpCircuit(config)
+    designs = circuit.sample_designs(n=n, seed=seed)
 
-    designs = []
-    for _ in range(10):
-        designs.append(
+    samples = []
+    for idx, design in enumerate(designs):
+        run_id = f"run_{idx:06d}"
+        samples.append(
             {
-                "sample_id": str(uuid.uuid4()),
-                "x_raw": {
-                    "W_in": 5e-6,
-                    "L_in": 0.18e-6,
-                    "W_load": 8e-6,
-                    "L_load": 0.18e-6,
-                    "W_stage2": 20e-6,
-                    "L_stage2": 0.18e-6,
-                    "I_bias": 10e-6,
-                    "Cc": 1e-12,
-                }
+                "run_id": run_id,
+                "seed": seed,
+                "design": design,
+                "netlist_params": circuit.to_netlist_params(design),
             }
         )
+    return samples
 
-    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-        json.dump(designs, f, indent=2)
 
-    print(f"Saved initial designs to {OUTPUT_PATH}")
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--config", type=str, default="configs/circuit/opamp.yaml")
+    parser.add_argument("--n", type=int, default=None)
+    parser.add_argument("--seed", type=int, default=None)
+    parser.add_argument("--out", type=str, default="data/interim/opamp_initial_samples.json")
+    args = parser.parse_args()
+
+    config = load_yaml(args.config)
+    sampling_cfg = config.get("sampling", {})
+    n = args.n if args.n is not None else int(sampling_cfg.get("n_initial", 64))
+    seed = args.seed if args.seed is not None else int(sampling_cfg.get("seed", 42))
+
+    samples = build_samples(config=config, n=n, seed=seed)
+    dump_json(samples, args.out)
+
+    print(f"[generate_initial_designs] saved {len(samples)} samples to {args.out}")
 
 
 if __name__ == "__main__":
