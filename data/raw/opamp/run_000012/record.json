@@ -17,7 +17,7 @@
   "runner_result": {
     "success": true,
     "return_code": 0,
-    "runtime_sec": 0.015656471252441406,
+    "runtime_sec": 0.005906820297241211,
     "run_dir": "data\\raw\\opamp\\run_000012",
     "log_path": "data\\raw\\opamp\\run_000012\\spectre.out",
     "stderr_path": "data\\raw\\opamp\\run_000012\\spectre.err",
@@ -30,8 +30,8 @@
   },
   "simulation_failed": true,
   "failure_reasons": [
-    "simulation_failed flag found in metrics",
-    "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+    "metrics_missing:['gain_db', 'gbw_hz', 'pm_deg', 'power_w']",
+    "simulation_flagged_failure"
   ],
   "metrics_complete": false,
   "is_feasible": false,

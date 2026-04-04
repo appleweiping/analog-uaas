@@ -1,59 +1,56 @@
-from dataclasses import dataclass, field
-from typing import Dict, Any, Optional
-from datetime import datetime
+from __future__ import annotations
+
+from dataclasses import asdict, dataclass, field
+from datetime import datetime, timezone
+from typing import Any, Dict, List, Optional
 
 
 @dataclass
 class SampleRecord:
     sample_id: str
 
-    # design variables
+    # raw design-side information
     x_raw: Dict[str, float]
     x_norm: Optional[Dict[str, float]] = None
+    environment: Dict[str, Any] = field(default_factory=dict)
 
-    # simulation outputs
-    y: Optional[Dict[str, float]] = None
+    # raw response-side information
+    y: Dict[str, float] = field(default_factory=dict)
+    y_norm: Optional[Dict[str, float]] = None
 
-    # feasibility and constraints
-    is_feasible: Optional[bool] = None
+    # spec / constraint semantics
+    is_feasible: bool = False
+    overall_spec_satisfied: bool = False
     constraint_satisfaction: Dict[str, bool] = field(default_factory=dict)
     constraint_violation: Dict[str, float] = field(default_factory=dict)
-
-    # boundary semantics
+    constraint_margin: Dict[str, float] = field(default_factory=dict)
+    nearest_constraint: Optional[str] = None
     boundary_distance: Optional[float] = None
-    boundary_label: Optional[str] = None   # safe / boundary / infeasible / failed
+    boundary_label: Optional[str] = None  # safe / boundary / infeasible / failed
 
     # execution status
-    simulation_success: Optional[bool] = None
+    simulation_success: bool = False
+    simulation_failed: bool = False
     failure_type: Optional[str] = None
+    failure_reasons: List[str] = field(default_factory=list)
+    metrics_complete: bool = True
     simulation_time_sec: Optional[float] = None
 
     # provenance
-    source_stage: Optional[str] = None     # initial / active / optimization / hard_case
+    source_stage: Optional[str] = None
     seed: Optional[int] = None
     dataset_version: Optional[str] = None
     config_name: Optional[str] = None
+    run_id: Optional[str] = None
+    split: Optional[str] = None
 
     # metadata
-    created_at: str = field(default_factory=lambda: datetime.utcnow().isoformat())
+    created_at: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
+    tags: Dict[str, Any] = field(default_factory=dict)
 
     def to_dict(self) -> Dict[str, Any]:
-        return {
-            "sample_id": self.sample_id,
-            "x_raw": self.x_raw,
-            "x_norm": self.x_norm,
-            "y": self.y,
-            "is_feasible": self.is_feasible,
-            "constraint_satisfaction": self.constraint_satisfaction,
-            "constraint_violation": self.constraint_violation,
-            "boundary_distance": self.boundary_distance,
-            "boundary_label": self.boundary_label,
-            "simulation_success": self.simulation_success,
-            "failure_type": self.failure_type,
-            "simulation_time_sec": self.simulation_time_sec,
-            "source_stage": self.source_stage,
-            "seed": self.seed,
-            "dataset_version": self.dataset_version,
-            "config_name": self.config_name,
-            "created_at": self.created_at,
-        }
+        return asdict(self)
+
+    @classmethod
+    def from_dict(cls, payload: Dict[str, Any]) -> "SampleRecord":
+        return cls(**payload)

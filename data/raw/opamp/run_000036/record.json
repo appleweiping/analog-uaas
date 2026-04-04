@@ -17,7 +17,7 @@
   "runner_result": {
     "success": true,
     "return_code": 0,
-    "runtime_sec": 0.0010008811950683594,
+    "runtime_sec": 0.002009868621826172,
     "run_dir": "data\\raw\\opamp\\run_000036",
     "log_path": "data\\raw\\opamp\\run_000036\\spectre.out",
     "stderr_path": "data\\raw\\opamp\\run_000036\\spectre.err",

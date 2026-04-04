@@ -30,8 +30,8 @@
   },
   "simulation_failed": true,
   "failure_reasons": [
-    "simulation_failed flag found in metrics",
-    "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+    "metrics_missing:['gain_db', 'gbw_hz', 'pm_deg', 'power_w']",
+    "simulation_flagged_failure"
   ],
   "metrics_complete": false,
   "is_feasible": false,

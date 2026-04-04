@@ -18,7 +18,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.006000995635986328,
+      "runtime_sec": 0.0024781227111816406,
       "run_dir": "data\\raw\\opamp\\run_000000",
       "log_path": "data\\raw\\opamp\\run_000000\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000000\\spectre.err",
@@ -63,7 +63,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0038843154907226562,
+      "runtime_sec": 0.001478433609008789,
       "run_dir": "data\\raw\\opamp\\run_000001",
       "log_path": "data\\raw\\opamp\\run_000001\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000001\\spectre.err",
@@ -108,7 +108,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.006000995635986328,
+      "runtime_sec": 0.00047969818115234375,
       "run_dir": "data\\raw\\opamp\\run_000002",
       "log_path": "data\\raw\\opamp\\run_000002\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000002\\spectre.err",
@@ -153,7 +153,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.002116680145263672,
+      "runtime_sec": 0.001478433609008789,
       "run_dir": "data\\raw\\opamp\\run_000003",
       "log_path": "data\\raw\\opamp\\run_000003\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000003\\spectre.err",
@@ -166,8 +166,8 @@
     },
     "simulation_failed": true,
     "failure_reasons": [
-      "simulation_failed flag found in metrics",
-      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+      "metrics_missing:['gain_db', 'gbw_hz', 'pm_deg', 'power_w']",
+      "simulation_flagged_failure"
     ],
     "metrics_complete": false,
     "is_feasible": false,
@@ -240,7 +240,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0,
+      "runtime_sec": 0.011385202407836914,
       "run_dir": "data\\raw\\opamp\\run_000005",
       "log_path": "data\\raw\\opamp\\run_000005\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000005\\spectre.err",
@@ -381,7 +381,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0,
+      "runtime_sec": 0.0010097026824951172,
       "run_dir": "data\\raw\\opamp\\run_000008",
       "log_path": "data\\raw\\opamp\\run_000008\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000008\\spectre.err",
@@ -428,7 +428,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.013194561004638672,
+      "runtime_sec": 0.0,
       "run_dir": "data\\raw\\opamp\\run_000009",
       "log_path": "data\\raw\\opamp\\run_000009\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000009\\spectre.err",
@@ -476,7 +476,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.013194561004638672,
+      "runtime_sec": 0.0022170543670654297,
       "run_dir": "data\\raw\\opamp\\run_000010",
       "log_path": "data\\raw\\opamp\\run_000010\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000010\\spectre.err",
@@ -523,7 +523,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.010451555252075195,
+      "runtime_sec": 0.004655361175537109,
       "run_dir": "data\\raw\\opamp\\run_000011",
       "log_path": "data\\raw\\opamp\\run_000011\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000011\\spectre.err",
@@ -568,7 +568,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.015656471252441406,
+      "runtime_sec": 0.005906820297241211,
       "run_dir": "data\\raw\\opamp\\run_000012",
       "log_path": "data\\raw\\opamp\\run_000012\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000012\\spectre.err",
@@ -581,8 +581,8 @@
     },
     "simulation_failed": true,
     "failure_reasons": [
-      "simulation_failed flag found in metrics",
-      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+      "metrics_missing:['gain_db', 'gbw_hz', 'pm_deg', 'power_w']",
+      "simulation_flagged_failure"
     ],
     "metrics_complete": false,
     "is_feasible": false,
@@ -608,7 +608,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.015656471252441406,
+      "runtime_sec": 0.0070018768310546875,
       "run_dir": "data\\raw\\opamp\\run_000013",
       "log_path": "data\\raw\\opamp\\run_000013\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000013\\spectre.err",
@@ -655,7 +655,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.015656471252441406,
+      "runtime_sec": 0.0063326358795166016,
       "run_dir": "data\\raw\\opamp\\run_000014",
       "log_path": "data\\raw\\opamp\\run_000014\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000014\\spectre.err",
@@ -703,7 +703,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.015656471252441406,
+      "runtime_sec": 0.004991292953491211,
       "run_dir": "data\\raw\\opamp\\run_000015",
       "log_path": "data\\raw\\opamp\\run_000015\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000015\\spectre.err",
@@ -750,7 +750,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0010175704956054688,
+      "runtime_sec": 0.0,
       "run_dir": "data\\raw\\opamp\\run_000016",
       "log_path": "data\\raw\\opamp\\run_000016\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000016\\spectre.err",
@@ -797,7 +797,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.012410879135131836,
+      "runtime_sec": 0.0,
       "run_dir": "data\\raw\\opamp\\run_000017",
       "log_path": "data\\raw\\opamp\\run_000017\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000017\\spectre.err",
@@ -844,7 +844,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.012410879135131836,
+      "runtime_sec": 0.015876293182373047,
       "run_dir": "data\\raw\\opamp\\run_000018",
       "log_path": "data\\raw\\opamp\\run_000018\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000018\\spectre.err",
@@ -889,7 +889,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.012410879135131836,
+      "runtime_sec": 0.018459558486938477,
       "run_dir": "data\\raw\\opamp\\run_000019",
       "log_path": "data\\raw\\opamp\\run_000019\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000019\\spectre.err",
@@ -902,8 +902,8 @@
     },
     "simulation_failed": true,
     "failure_reasons": [
-      "simulation_failed flag found in metrics",
-      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+      "metrics_missing:['gain_db', 'gbw_hz', 'pm_deg', 'power_w']",
+      "simulation_flagged_failure"
     ],
     "metrics_complete": false,
     "is_feasible": false,
@@ -929,7 +929,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.009950876235961914,
+      "runtime_sec": 0.0033435821533203125,
       "run_dir": "data\\raw\\opamp\\run_000020",
       "log_path": "data\\raw\\opamp\\run_000020\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000020\\spectre.err",
@@ -989,8 +989,8 @@
     },
     "simulation_failed": true,
     "failure_reasons": [
-      "simulation_failed flag found in metrics",
-      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+      "metrics_missing:['gain_db', 'gbw_hz', 'pm_deg', 'power_w']",
+      "simulation_flagged_failure"
     ],
     "metrics_complete": false,
     "is_feasible": false,
@@ -1029,8 +1029,8 @@
     },
     "simulation_failed": true,
     "failure_reasons": [
-      "simulation_failed flag found in metrics",
-      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+      "metrics_missing:['gain_db', 'gbw_hz', 'pm_deg', 'power_w']",
+      "simulation_flagged_failure"
     ],
     "metrics_complete": false,
     "is_feasible": false,
@@ -1103,7 +1103,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.010476827621459961,
+      "runtime_sec": 0.0,
       "run_dir": "data\\raw\\opamp\\run_000024",
       "log_path": "data\\raw\\opamp\\run_000024\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000024\\spectre.err",
@@ -1197,7 +1197,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.005324363708496094,
+      "runtime_sec": 0.0,
       "run_dir": "data\\raw\\opamp\\run_000026",
       "log_path": "data\\raw\\opamp\\run_000026\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000026\\spectre.err",
@@ -1245,7 +1245,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.011789321899414062,
+      "runtime_sec": 0.002527475357055664,
       "run_dir": "data\\raw\\opamp\\run_000027",
       "log_path": "data\\raw\\opamp\\run_000027\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000027\\spectre.err",
@@ -1290,7 +1290,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.00472569465637207,
+      "runtime_sec": 0.0,
       "run_dir": "data\\raw\\opamp\\run_000028",
       "log_path": "data\\raw\\opamp\\run_000028\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000028\\spectre.err",
@@ -1303,8 +1303,8 @@
     },
     "simulation_failed": true,
     "failure_reasons": [
-      "simulation_failed flag found in metrics",
-      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+      "metrics_missing:['gain_db', 'gbw_hz', 'pm_deg', 'power_w']",
+      "simulation_flagged_failure"
     ],
     "metrics_complete": false,
     "is_feasible": false,
@@ -1330,7 +1330,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0003864765167236328,
+      "runtime_sec": 0.0,
       "run_dir": "data\\raw\\opamp\\run_000029",
       "log_path": "data\\raw\\opamp\\run_000029\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000029\\spectre.err",
@@ -1390,8 +1390,8 @@
     },
     "simulation_failed": true,
     "failure_reasons": [
-      "simulation_failed flag found in metrics",
-      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+      "metrics_missing:['gain_db', 'gbw_hz', 'pm_deg', 'power_w']",
+      "simulation_flagged_failure"
     ],
     "metrics_complete": false,
     "is_feasible": false,
@@ -1417,7 +1417,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.001994609832763672,
+      "runtime_sec": 0.003131389617919922,
       "run_dir": "data\\raw\\opamp\\run_000031",
       "log_path": "data\\raw\\opamp\\run_000031\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000031\\spectre.err",
@@ -1464,7 +1464,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0030012130737304688,
+      "runtime_sec": 0.0031599998474121094,
       "run_dir": "data\\raw\\opamp\\run_000032",
       "log_path": "data\\raw\\opamp\\run_000032\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000032\\spectre.err",
@@ -1511,7 +1511,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.002000570297241211,
+      "runtime_sec": 0.0034351348876953125,
       "run_dir": "data\\raw\\opamp\\run_000033",
       "log_path": "data\\raw\\opamp\\run_000033\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000033\\spectre.err",
@@ -1524,8 +1524,8 @@
     },
     "simulation_failed": true,
     "failure_reasons": [
-      "simulation_failed flag found in metrics",
-      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+      "metrics_missing:['gain_db', 'gbw_hz', 'pm_deg', 'power_w']",
+      "simulation_flagged_failure"
     ],
     "metrics_complete": false,
     "is_feasible": false,
@@ -1551,7 +1551,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0029969215393066406,
+      "runtime_sec": 0.0020089149475097656,
       "run_dir": "data\\raw\\opamp\\run_000034",
       "log_path": "data\\raw\\opamp\\run_000034\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000034\\spectre.err",
@@ -1598,7 +1598,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0029993057250976562,
+      "runtime_sec": 0.0010008811950683594,
       "run_dir": "data\\raw\\opamp\\run_000035",
       "log_path": "data\\raw\\opamp\\run_000035\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000035\\spectre.err",
@@ -1643,7 +1643,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0010008811950683594,
+      "runtime_sec": 0.002009868621826172,
       "run_dir": "data\\raw\\opamp\\run_000036",
       "log_path": "data\\raw\\opamp\\run_000036\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000036\\spectre.err",
@@ -1690,7 +1690,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0020017623901367188,
+      "runtime_sec": 0.0,
       "run_dir": "data\\raw\\opamp\\run_000037",
       "log_path": "data\\raw\\opamp\\run_000037\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000037\\spectre.err",
@@ -1703,8 +1703,8 @@
     },
     "simulation_failed": true,
     "failure_reasons": [
-      "simulation_failed flag found in metrics",
-      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+      "metrics_missing:['gain_db', 'gbw_hz', 'pm_deg', 'power_w']",
+      "simulation_flagged_failure"
     ],
     "metrics_complete": false,
     "is_feasible": false,
@@ -1730,7 +1730,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.00099945068359375,
+      "runtime_sec": 0.0,
       "run_dir": "data\\raw\\opamp\\run_000038",
       "log_path": "data\\raw\\opamp\\run_000038\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000038\\spectre.err",
@@ -1867,7 +1867,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.010684967041015625,
+      "runtime_sec": 0.0,
       "run_dir": "data\\raw\\opamp\\run_000041",
       "log_path": "data\\raw\\opamp\\run_000041\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000041\\spectre.err",
@@ -2051,7 +2051,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.007357597351074219,
+      "runtime_sec": 0.0,
       "run_dir": "data\\raw\\opamp\\run_000045",
       "log_path": "data\\raw\\opamp\\run_000045\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000045\\spectre.err",
@@ -2098,7 +2098,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0,
+      "runtime_sec": 0.005834341049194336,
       "run_dir": "data\\raw\\opamp\\run_000046",
       "log_path": "data\\raw\\opamp\\run_000046\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000046\\spectre.err",
@@ -2111,8 +2111,8 @@
     },
     "simulation_failed": true,
     "failure_reasons": [
-      "simulation_failed flag found in metrics",
-      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+      "metrics_missing:['gain_db', 'gbw_hz', 'pm_deg', 'power_w']",
+      "simulation_flagged_failure"
     ],
     "metrics_complete": false,
     "is_feasible": false,
@@ -2138,7 +2138,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0,
+      "runtime_sec": 0.002501964569091797,
       "run_dir": "data\\raw\\opamp\\run_000047",
       "log_path": "data\\raw\\opamp\\run_000047\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000047\\spectre.err",
@@ -2183,7 +2183,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0,
+      "runtime_sec": 0.003009319305419922,
       "run_dir": "data\\raw\\opamp\\run_000048",
       "log_path": "data\\raw\\opamp\\run_000048\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000048\\spectre.err",
@@ -2231,7 +2231,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.01227259635925293,
+      "runtime_sec": 0.003997802734375,
       "run_dir": "data\\raw\\opamp\\run_000049",
       "log_path": "data\\raw\\opamp\\run_000049\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000049\\spectre.err",
@@ -2276,7 +2276,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0,
+      "runtime_sec": 0.0019969940185546875,
       "run_dir": "data\\raw\\opamp\\run_000050",
       "log_path": "data\\raw\\opamp\\run_000050\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000050\\spectre.err",
@@ -2323,7 +2323,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.006133079528808594,
+      "runtime_sec": 0.0030007362365722656,
       "run_dir": "data\\raw\\opamp\\run_000051",
       "log_path": "data\\raw\\opamp\\run_000051\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000051\\spectre.err",
@@ -2368,7 +2368,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0020089149475097656,
+      "runtime_sec": 0.00400853157043457,
       "run_dir": "data\\raw\\opamp\\run_000052",
       "log_path": "data\\raw\\opamp\\run_000052\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000052\\spectre.err",
@@ -2415,7 +2415,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0,
+      "runtime_sec": 0.002998828887939453,
       "run_dir": "data\\raw\\opamp\\run_000053",
       "log_path": "data\\raw\\opamp\\run_000053\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000053\\spectre.err",
@@ -2463,7 +2463,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0,
+      "runtime_sec": 0.0019979476928710938,
       "run_dir": "data\\raw\\opamp\\run_000054",
       "log_path": "data\\raw\\opamp\\run_000054\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000054\\spectre.err",
@@ -2523,8 +2523,8 @@
     },
     "simulation_failed": true,
     "failure_reasons": [
-      "simulation_failed flag found in metrics",
-      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+      "metrics_missing:['gain_db', 'gbw_hz', 'pm_deg', 'power_w']",
+      "simulation_flagged_failure"
     ],
     "metrics_complete": false,
     "is_feasible": false,
@@ -2597,7 +2597,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0,
+      "runtime_sec": 0.008008241653442383,
       "run_dir": "data\\raw\\opamp\\run_000057",
       "log_path": "data\\raw\\opamp\\run_000057\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000057\\spectre.err",
@@ -2644,7 +2644,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0,
+      "runtime_sec": 0.008008241653442383,
       "run_dir": "data\\raw\\opamp\\run_000058",
       "log_path": "data\\raw\\opamp\\run_000058\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000058\\spectre.err",
@@ -2749,8 +2749,8 @@
     },
     "simulation_failed": true,
     "failure_reasons": [
-      "simulation_failed flag found in metrics",
-      "missing required metrics: ['gain_db', 'gbw_hz', 'pm_deg', 'power_w']"
+      "metrics_missing:['gain_db', 'gbw_hz', 'pm_deg', 'power_w']",
+      "simulation_flagged_failure"
     ],
     "metrics_complete": false,
     "is_feasible": false,
@@ -2823,7 +2823,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.0,
+      "runtime_sec": 0.01602458953857422,
       "run_dir": "data\\raw\\opamp\\run_000062",
       "log_path": "data\\raw\\opamp\\run_000062\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000062\\spectre.err",
@@ -2870,7 +2870,7 @@
     "runner_result": {
       "success": true,
       "return_code": 0,
-      "runtime_sec": 0.015738248825073242,
+      "runtime_sec": 0.0,
       "run_dir": "data\\raw\\opamp\\run_000063",
       "log_path": "data\\raw\\opamp\\run_000063\\spectre.out",
       "stderr_path": "data\\raw\\opamp\\run_000063\\spectre.err",
